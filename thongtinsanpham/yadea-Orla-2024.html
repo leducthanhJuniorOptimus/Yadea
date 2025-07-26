@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xe Máy Điện YADEA ORLA 2024 - Nhanh Nhẹn - Cá Tính - Bền Bỉ</title>
+  <link rel="stylesheet" href="../thanhngau.css">
+  <link rel="icon" href="../image/logo-yadea.svg" type="../image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    .container-fluid {
+      background-image: url(../image/yadea-orla-banner.jpg);
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      padding: 80px 20px;
+    }
+
+    .row {
+      position: relative;
+      z-index: 1;
+    }
+
+    .col-3, .col-6 {
+      color: white;
+    }
+
+    .cssbuttons-io-button {
+      background: rgb(255, 95, 0);
+      color: white;
+      font-family: inherit;
+      padding: 0.35em;
+      padding-left: 1.2em;
+      font-size: 17px;
+      font-weight: 500;
+      border-radius: 0.9em;
+      border: none;
+      letter-spacing: 0.05em;
+      display: flex;
+      align-items: center;
+      box-shadow: inset 0 0 1.6em -0.6em rgb(255, 95, 0);
+      overflow: hidden;
+      position: relative;
+      height: 2.8em;
+      padding-right: 3.3em;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .cssbuttons-io-button .icon {
+      background: white;
+      margin-left: 1em;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 2.2em;
+      width: 2.2em;
+      border-radius: 0.7em;
+      box-shadow: 0.1em 0.1em 0.6em 0.2em rgb(255, 95, 0);
+      right: 0.3em;
+      transition: all 0.3s;
+    }
+
+    .cssbuttons-io-button:hover .icon {
+      width: calc(100% - 0.6em);
+    }
+
+    .cssbuttons-io-button .icon svg {
+      width: 1.1em;
+      transition: transform 0.3s;
+      color: rgb(255, 95, 0);
+    }
+
+    .cssbuttons-io-button:hover .icon svg {
+      transform: translateX(0.1em);
+    }
+
+    .cssbuttons-io-button:active .icon {
+      transform: scale(0.95);
+    }
+
+    .tocdo {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .tocdo div {
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+
+    .tocdo b {
+      display: block;
+      font-size: 20px;
+      color: #6FCAFF;
+    }
+
+    .tocdo img {
+      width: 100px;
+      margin-top: 10px;
+    }
+.specs-section {
+  background: #f6f6f6;
+  padding: 60px 20px;
+  font-family: 'Arial', sans-serif;
+}
+.title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+.title span {
+  color: #E75D19;
+}
+.specs-product {
+  text-align: center;
+  margin: 40px 0;
+}
+.product-img {
+  width: 280px;
+  margin-bottom: 20px;
+}
+.buy-btn {
+  background: #E75D19;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.product-name {
+  font-weight: bold;
+}
+.product-price {
+  color: #E75D19;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-weight: 600;
+}
+.accordion {
+  max-width: 100%;
+  margin: auto;
+}
+.accordion-item {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.accordion-header {
+  width: 100%;
+  background: #eaeaea;
+  padding: 15px 20px;
+  font-weight: bold;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.accordion-body {
+  background: #fff;
+  padding: 15px 20px;
+  display: none;
+}
+.accordion-item.active .accordion-body {
+  display: block;
+}
+.accordion-item .arrow {
+  transition: transform 0.3s;
+}
+.accordion-item.active .arrow {
+  transform: rotate(90deg);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+/* Điều chỉnh ul trong row align-items-center */
+.row.align-items-center ul {
+    display: flex;
+    flex-wrap: wrap; /* Tự động xuống hàng */
+    gap: 15px; /* Khoảng cách giữa các li */
+    padding: 0; /* Bỏ padding mặc định của ul */
+    margin: 0; /* Bỏ margin mặc định của ul */
+}
+
+/* Điều chỉnh mỗi li thành 2 cột trên hàng */
+.row.align-items-center ul li {
+    flex: 0 0 calc(50% - 15px); /* 50% chiều rộng trừ khoảng cách gap */
+    list-style: none; /* Bỏ dấu đầu dòng mặc định */
+    font-weight: 600;
+    color: black;
+    position: relative;
+    padding-left: 25px; /* Để chừa chỗ cho ký hiệu ⚡️ */
+}
+
+/* Đảm bảo ký hiệu ⚡️ hiển thị đúng */
+.row.align-items-center ul li::before {
+    content: '⚡️';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .row.align-items-center ul li {
+        flex: 0 0 100%; /* Trên di động, mỗi li chiếm 100% (1 cột) */
+    }
+}
+/* Container để áp dụng flex */
+.cirle-container {
+    display: flex;
+    gap: 20px; /* Khoảng cách giữa các cirle */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    flex-wrap: wrap; /* Đảm bảo xuống hàng nếu không đủ chỗ */
+}
+
+/* Định dạng cho từng cirle */
+.cirle {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Khoảng cách giữa dot và text */
+}
+
+/* Gradient cho dot (màu xanh) */
+.dot {
+    height: 25px;
+    width: 25px;
+    background: linear-gradient(135deg, #226F1A, #3DAF2E); /* Gradient từ màu chính (#226F1A) đến màu nhạt hơn */
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Gradient cho dot1 (màu đỏ) */
+.dot1 {
+    height: 25px;
+    width: 25px;
+    background: linear-gradient(135deg, #891338, #B3284A); /* Gradient từ màu chính (#891338) đến màu nhạt hơn */
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Gradient cho dot2 (màu xám/trắng) */
+.dot2 {
+    height: 25px;
+    width: 25px;
+    background: linear-gradient(135deg, #8A8A8A, #B0B0B0); /* Gradient từ màu chính (#8A8A8A) đến màu nhạt hơn */
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Tùy chỉnh thêm cho text */
+.cirle p, .cirle strong {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cirle-container {
+        flex-direction: column; /* Xếp dọc trên di động */
+        align-items: flex-start; /* Căn trái */
+    }
+
+    .cirle {
+        margin-bottom: 10px; /* Khoảng cách giữa các cirle khi xếp dọc */
+    }
+}
+.HeThongPhanh {
+    background-image: url(../image/Banh-xe-truoc-sau-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;  /* 👉 hiện toàn bộ ảnh */
+    width: 100%;
+    height: 500px;  /* 👈 điều chỉnh chiều cao theo tỉ lệ ảnh */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.HeThongPhanh ul {
+    padding: 10px 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    list-style: none;
+    content: '⚡️';
+    font-weight: 600;
+}
+.HeThongPhanh li::before {
+    content: '⚡️';
+    margin-right: 8px;
+
+}
+  </style>
+</head>
+<body>
+  <nav>
+        <ul>
+            <li><a href="/Yadea/congnghe">Công Nghệ</a></li>
+            <li><a href="/Yadea/hotrobaohanh">Hỗ trợ bảo hành</a></li>
+            <li><a href="/Yadea/tintuc">Tin tức</a></li>
+            <li><a href="/Yadea/hoptac">Cơ Hội Hợp Tác</a></li>
+        </ul>
+    </nav>
+    <div class="menu">
+    <div class="logo">
+        <a href="/Yadea"><img src="../image/logo-yadea.svg" alt="Logo Thương Hiệu"></a>
+    </div>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <div class="menu-nav" id="mainMenu">
+        <ul>
+            <li><a href="#" id="hoverXemay">Xe Máy Điện</a></li>
+            <li><a href="#" id="hoverXedap">Xe Đạp Điện</a></li>
+            <li><a href="../ve-yadea">Về YADEA</a></li>
+            <li><a href="../cuahang">Cửa Hàng</a></li>
+        </ul>
+    </div>
+
+    <div class="themgiohang">
+        <img src="../image/themgiohang.jpg" width="40px" alt="Giỏ Hàng">
+    </div>
+</div>
+<div id="Tatcasanpham">
+  <div class="container">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-12 col-md-3 sidebar">
+        <h5>Các dòng sản phẩm</h5>
+        <ul class="list-group">
+          <li data-category="new">Sản phẩm mới</li>
+          <li data-category="city">Dòng City</li>
+          <li data-category="sport">Dòng Sport</li>
+          <li data-category="yadea">YADEA</li>
+        </ul>
+      </div>
+
+      <!-- Sản phẩm -->
+      <div class="col-12 col-md-9 product-grid">
+        <!-- Sản phẩm mới -->
+        <div class="row product-category" data-category="new">
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/Anh-V002P-chinh-480x389.png" alt="YADEA Voltguard P">
+            <p>YADEA Voltguard P</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/Orla-P-45-co-bong-480x389.png" alt="YADEA ORLA 2024">
+            <p>YADEA ORLA 2024</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/1807-chinh-anh-sang-oris-xanh-45-480x360.png" alt="YADEA ULike">
+            <p>YADEA Oris</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/anh-sp-ossy1-480x390.png" alt="YADEA ULike">
+            <p>YADEA OSSY</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <a href="../thongtinsanpham/yadea-voltguard-u"><img src="../image/V002-U-anh-chinh-1-480x361.png" alt="YADEA ULike"></a>
+            <p>YADEA VOLTGUARD U</p>
+          </div>
+        </div>
+
+        <!-- Dòng City -->
+        <div class="row product-category" data-category="city" style="display:none">
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/ocean-cyan-002-480x389.png" alt="City Bike 1">
+            <p>YADEA OCEAN</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/icute-1-480x422.png" alt="City Bike 2">
+            <p>YADEA ICUTE</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/odoras-white-1-480x389.png" alt="City Bike 2">
+            <p>YADEA ODORAS</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/m6i-img-480x389.png" alt="City Bike 2">
+            <p>YADEA M61i</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/virgo-black-1-480x389.png" alt="City Bike 2">
+            <p>YADEA VIRGO</p>
+          </div>
+        </div>
+
+        <!-- Dòng Sport -->
+        <div class="row product-category" data-category="sport" style="display:none">
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/xzone-cheo-xam-480x389.webp" alt="Sport Bike 1">
+            <p>YADEA Xzone</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/2-anh-cung-kich-thuoc-Vekoo-2-480x390.png" alt="Sport Bike 2">
+            <p>YADEA Vekko</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/xmen-1-480x390.png" alt="Sport Bike 2">
+            <p>YADEA Xmen Neo</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/2-anh-cung-kich-thuoc-XSKy-1-480x390.png" alt="Sport Bike 2">
+            <p>YADEA XSky</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/xbull-1-480x390.png" alt="Sport Bike 2">
+            <p>YADEA XBull</p>
+          </div>
+        </div>
+
+        <!-- YADEA -->
+        <div class="row product-category" data-category="yadea" style="display:none">
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/ossy.png" alt="YADEA Ossy">
+            <p>YADEA Ossy</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/V002-U-anh-chinh-1-480x361.png" alt="YADEA Voltguard U">
+            <p>YADEA Voltguard U</p>
+          </div>
+        </div>
+        <!-- Xe Đạp Điện -->
+        <div class="row product-category" data-category="xedap" style="display:none">
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/Anrh-nho-ben-tren-480x361-i8-gau-xanh-sua-480x361.png" alt="YADEA Bike 1">
+            <p>YADEA i8 VINTAGE</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/Anh-nho-ben-tren-480x361-1-480x361.png" alt="YADEA Bike 2">
+            <p>YADEA I8</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/product-i6-pin-lithium-480x389.png" alt="YADEA Bike 2">
+            <p>YADEA I6</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/YADEA-iFUN-anh-chinh-480x389.webp" alt="YADEA Bike 2">
+            <p>YADEA iFUN</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/igo-pink-1-480x389.png" alt="YADEA Bike 2">
+            <p>YADEA Igo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <br><br><br><br>
+
+  <div class="container-fluid py-5 ">
+    <div class="row align-items-center">
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-4 ">
+        <b style="color: white; font-size: 38px;">YADEA ORLA 2024</b><br>
+        <strong style="color: white; font-size: 22px;">TỎA SÁNG VƯỢT THỜI GIAN </strong> <br>
+        <hr width="100%" size="5px"/>
+        <p style="color: white;">Giá bán lẻ đề xuất:</p>
+        <b style="color: #FF5F00; font-size: 40px;">20,490,000 VND</b>
+        <a href="#specs-section" style="text-decoration: none;">
+          <button class="cssbuttons-io-button">
+          Chọn Mua Sản Phẩm
+          <div class="icon">
+            <svg height="24" width="24" viewBox="0 0 24 24">
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>
+            </svg>
+          </div>
+        </button>
+        </a>
+      </div>
+      <div class="col-6 text-center">
+        <img src="../image/orla-beige-detail.png" alt="YADEA VOLTGUARD U" class="img-fluid">
+      </div>
+      <div class="col-3">
+        <div class="tocdo">
+          <div>Tốc độ tối đa <b>48 Km/h</b></div>
+          <div>Quãng đường <b>65 Km</b></div>
+          <div>Nền tảng <img src="../image/aigo-logo.webp" alt="Aigo Logo"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main style="background: #EBE7E4; padding: 80px 30px;">
+    <div class="container-fluid" style="background-image: url(../image/2-g-web-orrla.jpg); height: 900px;">
+                    <div class="row align-items-center">
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <h4 style="color: white; font-weight: bold;"> MỞ KHÓA THÔNG MINH, KẾT NỐI HÀNH TRÌNH</h4>
+                <center><hr  width="100%" size="5px" color="rgb(255, 95, 0)"/></center>        
+                    <p style="color: white; font-size: 1.1rem;"><strong>Yadea Orla với công nghệ kết nối thông minh thông qua Bluetooth với điện thoại, chỉ cần vặn khóa núm xoay sang bên phải để khởi động xe. Đem lại tiện ích cao cấp cho người lái, tạm biệt nỗi phiền phức của chiếc chìa khóa vật lý.</strong></p>
+                <center><hr  width="100%" size="5px" color="rgb(255, 95, 0)"/></center>        
+                </div>
+            </div>
+    </div>
+  </div>
+  <br><br>
+    <div class="container-fluid" style="background-image: url(../image/3-app.jpg); height: 900px;">
+                    <div class="row align-items-center">
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <h4 style="color: white; font-weight: bold;">TỰ NHẬN DIỆN CHỦ NHÂN</h4>
+                    <p style="color: white; font-size: 1.1rem;"><strong>Để nâng tầm trải nghiệm di chuyển cho bạn, YADEA tích hợp công nghệ kết nối với điện thoại thông minh trên xe——APP YADEA, điều khiển xe dễ dàng mọi lúc mọi nơi, bảo vệ sự an toàn di chuyển của bạn.</strong></p>
+                    <ul>
+        <li>
+            <b style="color: white;">Hệ thống chống trộm thông minh</b>  <br>
+        </li>
+        <li>
+            <b style="color: white;">Còi báo động tìm xe</b> 
+        </li>
+        <li>
+            <b style="color: white;">Tài khoản gia đình</b> 
+        </li>
+        <li>
+            <b style="color: white;">Cài đặt âm thanh xe</b> 
+        </li>
+        <li>
+                      <b style="color: white;">Cài đặt âm thanh xe</b> 
+        </li>
+    </ul>
+                </div>
+            </div>
+    </div>
+  </div>
+  <br>
+  <div class="container-fluid" style="background-image: url(../image/4-g.jpg); height: 900px;">
+    <div class="row align-items-center">
+
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="100" style="padding: 200px;">
+      </div>
+      <div class="col-md-6 text-center" data-aos="fade-left" data-aos-delay="300">
+        <h4 style="color: white; font-weight: bold;">THIẾT KẾ CỔ ĐIỂN</h4>
+        <p style="color: white; font-size: 1.1rem;"><strong>Tái hiện lại nét cổ điển của phong cách Châu Âu, đại diện cho vẻ đẹp trường tồn, bền bỉ, YADEA Orla mang đậm chất nữ tính độc lập và thanh lịch, giúp bạn tự tin tỏa sáng theo cách riêng của chính mình.</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row align-items-center">
+    <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+      <h4 style="color: black; font-weight: bold;">HIỆU NĂNG CÔNG NGHỆ</h4>
+       <ul>
+        <li>
+            Độ sáng đèn pha : <b style="color: #FF5F00;">28.000cd</b>
+            Khoảng cách chiếu sáng : <b style="color: #FF5F00;">55m</b>
+            Vượt qua thử nghiệm : <b style="color: #FF5F00;">400h kháng lão hoá	</b>
+            Tiêu chuẩn kháng nước : <b style="color: #FF5F00;">IPX6</b>
+        </li>
+    </ul>
+    </div>
+    <div class="col-md-6 text-center" data-aos="fade-left" data-aos-delay="300">
+      <img src="../image/yadea-orla-denxe-1280x1091.jpg" alt="Ảnh Về Xe Điện"  style="border-radius: 12px;  max-width: 100%;">
+    </div>
+  </div>
+  <div class="row align-items-center">
+    <div class="col-md-6 text-center" data-aos="fade-left" data-aos-delay="300">
+      <img src="../image/Dong-ho-V002P.png" alt="Ảnh Về Xe Điện"  style="border-radius: 12px;  max-width: 100%;">
+    </div>
+    <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+      <h4 style="color: black; font-weight: bold;"> ĐỒNG HỒ HIỂN THỊ TRẠNG THÁI ĐIỆN NĂNG 8.4 INCH</h4>
+      <p style="color: black; font-size: 1rem;"><strong>Hiển thị tình trạng tiêu hao năng lượng của xe, giúp người dùng tự kiểm soát mức độ tiêu hao</strong></p>
+      <div class="cirle-container">
+    <div class="cirle">
+        <span class="dot"></span>
+        <p style="color: #226F1A; font-weight: 600;">Màu Xanh :</p>
+        <strong>Thu Hồi Điện Năng</strong>
+    </div>
+    <br>
+    <div class="cirle">
+        <span class="dot1"></span>
+        <p style="color: #891338; font-weight: 600;">Màu Đỏ :</p>
+        <strong>Tiêu Hao Năng Lượng Cao</strong>
+    </div>
+    <div class="cirle">
+        <span class="dot2"></span>
+        <p style="color: #8C8C8C;font-weight: 600;">Màu Trắng : </p>
+        <strong>Tiêu Hao Bình Thường</strong>
+    </div>
+</div>
+    </div>
+  </div>
+  <div class="HeThongPhanh">
+        <center> <b>HỆ THỐNG PHANH</b>
+            <ul>
+                <li>
+                    Hệ thống giảm xóc bền bỉ
+                </li>
+                <li>
+                    Phanh đĩa trước sau an toàn
+                </li>
+                <li>
+                    Má phanh chất lượng: Lượng mài mòn/ 1000 lần phanh &lt; 0,04mm
+                </li>
+                <li>
+                    Piston đối xứng: tăng hiệu quả phanh, phanh 100.000 lần không bị lệch
+                </li>
+            </ul>
+        </center>
+  </div>
+</main>
+<section class="specs-section" id="specs-section">
+  <div class="container">
+    <h2 class="title">THÔNG SỐ <span>KỸ THUẬT</span></h2>
+
+    <div class="specs-product">
+      <img src="../image/Anh-sp-chinh-1200x880-trang-480x330.png" alt="YADEA Voltguard U" class="product-img" />
+      <center>
+        <a href="../sanpham/yadea-voltguard-p" style="text-decoration: none;">
+          <button class="cssbuttons-io-button">
+          Chọn Mua Sản Phẩm
+          <div class="icon">
+            <svg height="24" width="24" viewBox="0 0 24 24">
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>
+            </svg>
+          </div>
+        </button>
+        </a>
+      </center>
+      <p class="product-name">YADEA Voltguard P</p>
+      <p class="product-price">27,990,000 VND</p>
+    </div>
+
+    <div class="accordion">
+      <div class="accordion-item active">
+        <button class="accordion-header">
+          KÍCH THƯỚC, TRỌNG LƯỢNG
+          <span class="arrow">▼</span>
+        </button>
+        <div class="accordion-body">
+          <table>
+            <tr><td>Dài x Rộng x Cao</td><td>1930x720x1130mm</td></tr>
+            <tr><td>Màn hình</td><td>Màn hình tinh thể lỏng 8.4 inch</td></tr>
+            <tr><td>Khoảng sáng gầm xe</td><td>140mm</td></tr>
+            <tr><td>Độ cao yên xe</td><td>770mm</td></tr>
+            <tr><td>Khối lượng bản thân</td><td>118 kg</td></tr>
+            <tr><td>Khối lượng cho phép chở</td><td>130 kg</td></tr>
+            <tr><td>Dung tích cốp xe</td><td>20L</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          ĐỘNG CƠ
+          <span class="arrow">▶</span>
+        </button>
+        <div class="accordion-body">
+          <table>
+            <tr><td>Loại động cơ</td><td>Hub</td></tr>
+            <tr><td>Công suất danh định</td><td>1500W</td></tr>
+            <tr><td>Công suất tối đa</td><td>2550W</td></tr>
+            <tr><td>Tốc độ tối đa:</td><td>50km/h</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          ẮC QUY / PIN
+          <span class="arrow">▶</span>
+        </button>
+        <div class="accordion-body">
+          <table>
+            <tr><td>Loại ắc quy</td><td>Ắc quy Graphene TTFAR</td></tr>
+            <tr><td>Dung lượng pin</td><td>72V38Ah</td></tr>
+            <tr><td>Độ dài quãng đường</td><td>100km</td></tr>
+            <tr><td>Thời gian sạc</td><td>7~8 tiếng</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          THÔNG SỐ KHÁC
+          <span class="arrow">▶</span>
+        </button>
+        <div class="accordion-body">
+          <table>
+            <tr><td>Loại vành</td><td>MT2.125×14/MT2.5×14</td></tr>
+            <tr><td>Đường kính vành trước/sau</td><td>14/14 inch</td></tr>
+            <tr><td>Hệ thống phanh</td><td>Phanh đĩa</td></tr>
+            <tr><td>Loại lốp</td><td>Lốp không săm</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+    <div class="LienHe">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-3">
+                    <div class="LienHeCongTy">
+                        <img src="../image/logo-yadea.svg" alt="Logo Công Ty" style="max-width: 150px;">
+                        <p><strong>CÔNG TY TNHH ELECTRIC MOTORCYCLE YADEA VIỆT NAM</strong></p>
+                        <p>Mã Số Thuế: 2400866767 do Sở KHĐT Tỉnh Bắc Giang cấp lần đầu ngày 27/06/2019.</p>
+                        <p><strong>Địa Chỉ:</strong> Lô O1-2... Quang Châu, Việt Yên, Bắc Giang, Việt Nam.</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer-list">
+                        <p><strong>Sản phẩm mới</strong></p>
+                        <li><a href="#">YADEA Ossy</a></li>
+                        <li><a href="#">YADEA Voltguard</a></li>
+                        <li><a href="#">YADEA Oris</a></li>
+                        <li><a href="#">YADEA Orla 2024</a></li>
+                        <li><a href="#">YADEA iFUN</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer-list">
+                        <p><strong>Về Chúng Tôi</strong></p>
+                        <li><a href="#">Về YADEA</a></li>
+                        <li><a href="#">Cửa Hàng</a></li>
+                        <li><a href="#">Công Nghệ</a></li>
+                        <li><a href="#">Tin Tức</a></li>
+                        <li><a href="#">Tuyển Dụng</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer-list">
+                        <p><strong>Hỗ Trợ</strong></p>
+                        <li><a href="#">Hỗ Trợ & Bảo Hành</a></li>
+                        <li><a href="#">Thanh Toán</a></li>
+                        <li><a href="#">Vận Chuyển</a></li>
+                        <li><a href="#">Chính Sách Đổi Trả</a></li>
+                        <li><a href="#">Chính Sách Bảo Mật</a></li>
+                        <li><a href="#">Cơ Hội Hợp Tác</a></li>
+                        <li><a href="#">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <p><strong>Theo Dõi YADEA</strong></p>
+                    <div class="social-media">
+                        <img src="../image/facebook.jpg" alt="Facebook">
+                        <img src="../image/tiktok.png" alt="TikTok">
+                        <img src="../image/tải xuống.jpg" alt="Instagram">
+                        <img src="../image/youtube.png" alt="YouTube">
+                        <img src="../image/zalo.png" alt="Zalo">
+                    </div>
+                    <div class="contact-info">
+                        <p><strong>CSKH:</strong> 1900636803</p>
+                        <p><strong>Liên Hệ Hợp Tác:</strong> (+84) 204 6299 288</p>
+                        <p><strong>Email:</strong> market@yadea.com.vn</p>
+                    </div>
+                    <img src="../image/logoSaleNoti-300x114.png" alt="Chứng nhận" style="max-width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,
+  });
+</script>
+<script>
+  document.querySelectorAll('.accordion-header').forEach(button => {
+    button.addEventListener('click', () => {
+      const item = button.parentElement;
+      item.classList.toggle('active');
+    });
+  });
+</script>
+
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('mainMenu');
+        menu.classList.toggle('active');
+    }
+</script>
+    <script>
+  const hoverLink = document.getElementById("hoverXemay");
+  const spBox = document.getElementById("Tatcasanpham");
+
+  hoverLink.addEventListener("mouseenter", () => {
+    spBox.style.display = "flex";
+  });
+
+  hoverLink.addEventListener("mouseleave", () => {
+    setTimeout(() => {
+      if (!spBox.matches(':hover')) {
+        spBox.style.display = "none";
+      }
+    }, 200);
+  });
+
+  spBox.addEventListener("mouseleave", () => {
+    spBox.style.display = "none";
+  });
+
+  spBox.addEventListener("mouseenter", () => {
+    spBox.style.display = "flex";
+  });
+</script>
+<script>
+  // Xử lý click vào danh mục sản phẩm
+  document.querySelectorAll('.sidebar ul li').forEach(item => {
+    item.addEventListener('click', function() {
+      // Lấy giá trị data-category từ item
+      const selected = this.getAttribute('data-category');
+
+      // Ẩn tất cả danh mục
+      document.querySelectorAll('.product-category').forEach(category => {
+        category.style.display = 'none';
+      });
+
+      // Hiện danh mục được chọn
+      const target = document.querySelector(`.product-category[data-category="${selected}"]`);
+      if (target) {
+        target.style.display = 'flex';
+        target.style.flexWrap = 'wrap';
+        target.style.gap = '20px';
+      }
+
+      // Highlight item đang chọn
+      document.querySelectorAll('.sidebar ul li').forEach(li => li.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+</script>
+<script>
+  const hoverXedap = document.getElementById("hoverXedap");
+
+  hoverXedap.addEventListener("mouseenter", () => {
+    spBox.style.display = "flex";
+
+    // Chỉ hiện danh mục xe đạp điện
+    document.querySelectorAll('.product-category').forEach(category => {
+      category.style.display = 'none';
+    });
+    const xedap = document.querySelector('.product-category[data-category="xedap"]');
+    if (xedap) {
+      xedap.style.display = 'flex';
+      xedap.style.flexWrap = 'wrap';
+      xedap.style.gap = '20px';
+    }
+
+    // Cập nhật sidebar active nếu có
+    document.querySelectorAll('.sidebar ul li').forEach(li => li.classList.remove('active'));
+    const activeLi = document.querySelector('.sidebar ul li[data-category="xedap"]');
+    if (activeLi) activeLi.classList.add('active');
+  });
+</script>
+</body>
+</html>

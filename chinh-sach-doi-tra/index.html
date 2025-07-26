@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chính Sách Đổi Trả</title>
+    <link rel="icon" href="../image/logo-yadea.svg" type="../image/svg+xml">
+    <link rel="stylesheet" href="../anhteo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</head>
+<body>
+        <nav>
+        <ul>
+            <li><a href="/Yadea/congnghe">Công Nghệ</a></li>
+            <li><a href="/Yadea/hotrobaohanh">Hỗ trợ bảo hành</a></li>
+            <li><a href="/Yadea/tintuc">Tin tức</a></li>
+            <li><a href="/Yadea/hoptac">Cơ Hội Hợp Tác</a></li>
+        </ul>
+    </nav>
+    <div class="menu">
+    <div class="logo">
+        <a href="/Yadea"><img src="../image/logo-yadea.svg" alt="Logo Thương Hiệu"></a>
+    </div>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <div class="menu-nav" id="mainMenu">
+        <ul>
+            <li><a href="#" id="hoverXemay">Xe Máy Điện</a></li>
+            <li><a href="#" id="hoverXedap">Xe Đạp Điện</a></li>
+            <li><a href="/Yadea/ve-yadea">Về YADEA</a></li>
+            <li><a href="/Yadea/cuahang">Cửa Hàng</a></li>
+        </ul>
+    </div>
+
+    <div class="themgiohang">
+        <img src="../image/themgiohang.jpg" width="40px" alt="Giỏ Hàng">
+    </div>
+</div>
+<div id="Tatcasanpham">
+  <div class="container">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-12 col-md-3 sidebar">
+        <h5>Các dòng sản phẩm</h5>
+        <ul class="list-group">
+          <li data-category="new">Sản phẩm mới</li>
+          <li data-category="city">Dòng City</li>
+          <li data-category="sport">Dòng Sport</li>
+          <li data-category="yadea">YADEA</li>
+        </ul>
+      </div>
+
+      <!-- Sản phẩm -->
+      <div class="col-12 col-md-9 product-grid">
+        <!-- Sản phẩm mới -->
+        <div class="row product-category" data-category="new">
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/Anh-V002P-chinh-480x389.png" alt="YADEA Voltguard P">
+            <p>YADEA Voltguard P</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/Orla-P-45-co-bong-480x389.png" alt="YADEA ORLA 2024">
+            <p>YADEA ORLA 2024</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/1807-chinh-anh-sang-oris-xanh-45-480x360.png" alt="YADEA ULike">
+            <p>YADEA Oris</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/anh-sp-ossy1-480x390.png" alt="YADEA ULike">
+            <p>YADEA OSSY</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <a href="../thongtinsanpham/yadea-voltguard-u"><img src="../image/V002-U-anh-chinh-1-480x361.png" alt="YADEA ULike"></a>
+            <p>YADEA VOLTGUARD U</p>
+          </div>
+        </div>
+
+        <!-- Dòng City -->
+        <div class="row product-category" data-category="city" style="display:none">
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/ocean-cyan-002-480x389.png" alt="City Bike 1">
+            <p>YADEA OCEAN</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/icute-1-480x422.png" alt="City Bike 2">
+            <p>YADEA ICUTE</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/odoras-white-1-480x389.png" alt="City Bike 2">
+            <p>YADEA ODORAS</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/m6i-img-480x389.png" alt="City Bike 2">
+            <p>YADEA M61i</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/virgo-black-1-480x389.png" alt="City Bike 2">
+            <p>YADEA VIRGO</p>
+          </div>
+        </div>
+
+        <!-- Dòng Sport -->
+        <div class="row product-category" data-category="sport" style="display:none">
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/xzone-cheo-xam-480x389.webp" alt="Sport Bike 1">
+            <p>YADEA Xzone</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/2-anh-cung-kich-thuoc-Vekoo-2-480x390.png" alt="Sport Bike 2">
+            <p>YADEA Vekko</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/xmen-1-480x390.png" alt="Sport Bike 2">
+            <p>YADEA Xmen Neo</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/2-anh-cung-kich-thuoc-XSKy-1-480x390.png" alt="Sport Bike 2">
+            <p>YADEA XSky</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/xbull-1-480x390.png" alt="Sport Bike 2">
+            <p>YADEA XBull</p>
+          </div>
+        </div>
+
+        <!-- YADEA -->
+        <div class="row product-category" data-category="yadea" style="display:none">
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/ossy.png" alt="YADEA Ossy">
+            <p>YADEA Ossy</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/V002-U-anh-chinh-1-480x361.png" alt="YADEA Voltguard U">
+            <p>YADEA Voltguard U</p>
+          </div>
+        </div>
+        <!-- Xe Đạp Điện -->
+        <div class="row product-category" data-category="xedap" style="display:none">
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/Anrh-nho-ben-tren-480x361-i8-gau-xanh-sua-480x361.png" alt="YADEA Bike 1">
+            <p>YADEA i8 VINTAGE</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/Anh-nho-ben-tren-480x361-1-480x361.png" alt="YADEA Bike 2">
+            <p>YADEA I8</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/product-i6-pin-lithium-480x389.png" alt="YADEA Bike 2">
+            <p>YADEA I6</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/YADEA-iFUN-anh-chinh-480x389.webp" alt="YADEA Bike 2">
+            <p>YADEA iFUN</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="../image/igo-pink-1-480x389.png" alt="YADEA Bike 2">
+            <p>YADEA Igo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br><br><br>
+
+<div class="HopTac">
+    <div class="HopTacChu">
+        <strong>CHÍNH SÁCH ĐỔI TRẢ</strong>
+        <h6><a href="/Yadea"  class="lmaop">Trang Chủ</a>   /  Chính Sách Đổi Trả</h6>
+    </div>
+</div>
+<main style="background-color: #FFFFFF !important;">
+<div class="container py-4">
+  <h2 class="fw-bold mb-4 text-uppercase">Chính Sách Đổi, Trả</h2>
+
+  <p>
+    CÔNG TY TNHH ELECTRIC MOTORCYCLE YADEA VIỆT NAM luôn tự hào về chất lượng sản phẩm và cam kết mang đến cho khách hàng những chiếc xe đạp điện, xe máy điện đạt tiêu chuẩn cao nhất.
+  </p>
+  <p>
+    <strong>Lưu ý:</strong> Hiện tại, Yadea <span class="text-danger fw-bold">không áp dụng chính sách đổi, trả sản phẩm</span>. Thay vào đó, công ty phát triển hệ thống hơn <strong>800 nhà phân phối chính hãng</strong> trên toàn quốc, sẵn sàng hỗ trợ bảo hành và khắc phục mọi sự cố nhanh chóng và hiệu quả.
+  </p>
+
+  <div class="accordion" id="returnPolicy">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading1">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+          1. Chất Lượng Sản Phẩm
+        </button>
+      </h2>
+      <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#returnPolicy">
+        <div class="accordion-body">
+          Yadea cam kết cung cấp sản phẩm chất lượng cao, bền bỉ và an toàn. Mỗi xe đều trải qua kiểm tra nghiêm ngặt trước khi giao đến tay khách hàng.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading2">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+          2. Không Có Chính Sách Đổi, Trả
+        </button>
+      </h2>
+      <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#returnPolicy">
+        <div class="accordion-body">
+          Hiện tại, Yadea không áp dụng đổi hoặc trả sản phẩm sau khi mua. Mong Quý khách thông cảm và lựa chọn kỹ lưỡng trước khi đặt hàng.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading3">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+          3. Hệ Thống Nhà Phân Phối Chính Hãng
+        </button>
+      </h2>
+      <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#returnPolicy">
+        <div class="accordion-body">
+          Với mạng lưới hơn 800 nhà phân phối trên cả nước, khách hàng có thể dễ dàng tiếp cận dịch vụ kỹ thuật, bảo hành, và khắc phục sự cố một cách nhanh chóng và thuận tiện.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading4">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+          4. Dịch Vụ Bảo Hành
+        </button>
+      </h2>
+      <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#returnPolicy">
+        <div class="accordion-body">
+          Khách hàng có thể mang xe đến bất kỳ nhà phân phối chính hãng nào để được hỗ trợ kỹ thuật và bảo hành. Đội ngũ kỹ thuật viên chuyên nghiệp của Yadea sẽ xử lý sự cố trong thời gian sớm nhất.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading5">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+          5. Cam Kết Hỗ Trợ
+        </button>
+      </h2>
+      <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#returnPolicy">
+        <div class="accordion-body">
+          Yadea luôn đặt sự hài lòng của khách hàng lên hàng đầu. Công ty không ngừng cải tiến dịch vụ hậu mãi để đảm bảo mỗi trải nghiệm với sản phẩm là một trải nghiệm đáng nhớ.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="mt-4 fst-italic">
+    Mặc dù không áp dụng chính sách đổi – trả, Yadea tin tưởng rằng với hệ thống phân phối toàn quốc và dịch vụ kỹ thuật chuyên nghiệp, Quý khách sẽ luôn cảm thấy yên tâm và hài lòng khi lựa chọn sản phẩm của chúng tôi.
+  </p>
+</div>
+
+
+
+        <br><br>
+</main>
+    <footer>
+    <div class="LienHe">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-3">
+                    <div class="LienHeCongTy">
+                        <img src="../image/logo-yadea.svg" alt="Logo Công Ty" style="max-width: 150px;">
+                        <p><strong>CÔNG TY TNHH ELECTRIC MOTORCYCLE YADEA VIỆT NAM</strong></p>
+                        <p>Mã Số Thuế: 2400866767 do Sở KHĐT Tỉnh Bắc Giang cấp lần đầu ngày 27/06/2019.</p>
+                        <p><strong>Địa Chỉ:</strong> Lô O1-2... Quang Châu, Việt Yên, Bắc Giang, Việt Nam.</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer-list">
+                        <p><strong>Sản phẩm mới</strong></p>
+                        <li><a href="#">YADEA Ossy</a></li>
+                        <li><a href="#">YADEA Voltguard</a></li>
+                        <li><a href="#">YADEA Oris</a></li>
+                        <li><a href="#">YADEA Orla 2024</a></li>
+                        <li><a href="#">YADEA iFUN</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer-list">
+                        <p><strong>Về Chúng Tôi</strong></p>
+                        <li><a href="#">Về YADEA</a></li>
+                        <li><a href="#">Cửa Hàng</a></li>
+                        <li><a href="#">Công Nghệ</a></li>
+                        <li><a href="#">Tin Tức</a></li>
+                        <li><a href="#">Tuyển Dụng</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer-list">
+                        <p><strong>Hỗ Trợ</strong></p>
+                        <li><a href="#">Hỗ Trợ & Bảo Hành</a></li>
+                        <li><a href="#">Thanh Toán</a></li>
+                        <li><a href="#">Vận Chuyển</a></li>
+                        <li><a href="#">Chính Sách Đổi Trả</a></li>
+                        <li><a href="#">Chính Sách Bảo Mật</a></li>
+                        <li><a href="#">Cơ Hội Hợp Tác</a></li>
+                        <li><a href="#">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <p><strong>Theo Dõi YADEA</strong></p>
+                    <div class="social-media">
+                        <img src="../image/facebook.jpg" alt="Facebook">
+                        <img src="../image/tiktok.png" alt="TikTok">
+                        <img src="../image/tải xuống.jpg" alt="Instagram">
+                        <img src="../image/youtube.png" alt="YouTube">
+                        <img src="../image/zalo.png" alt="Zalo">
+                    </div>
+                    <div class="contact-info">
+                        <p><strong>CSKH:</strong> 1900636803</p>
+                        <p><strong>Liên Hệ Hợp Tác:</strong> (+84) 204 6299 288</p>
+                        <p><strong>Email:</strong> market@yadea.com.vn</p>
+                    </div>
+                    <img src="../image/logoSaleNoti-300x114.png" alt="Chứng nhận" style="max-width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('mainMenu');
+        menu.classList.toggle('active');
+    }
+    document.querySelectorAll('.CauHoiThuongGap').forEach(item => {
+            const question = item.querySelector('p');
+            const arrow = item.querySelector('.arrow-down');
+            const answer = item.querySelector('.HienThiCauTraLoi');
+
+            question.addEventListener('click', () => {
+                answer.classList.toggle('active');
+                arrow.classList.toggle('active');
+            });
+
+            arrow.addEventListener('click', () => {
+                answer.classList.toggle('active');
+                arrow.classList.toggle('active');
+            });
+        });
+    </script>
+    <script>
+  const hoverLink = document.getElementById("hoverXemay");
+  const spBox = document.getElementById("Tatcasanpham");
+
+  hoverLink.addEventListener("mouseenter", () => {
+    spBox.style.display = "flex";
+  });
+
+  hoverLink.addEventListener("mouseleave", () => {
+    setTimeout(() => {
+      if (!spBox.matches(':hover')) {
+        spBox.style.display = "none";
+      }
+    }, 200);
+  });
+
+  spBox.addEventListener("mouseleave", () => {
+    spBox.style.display = "none";
+  });
+
+  spBox.addEventListener("mouseenter", () => {
+    spBox.style.display = "flex";
+  });
+</script>
+<script>
+  // Xử lý click vào danh mục sản phẩm
+  document.querySelectorAll('.sidebar ul li').forEach(item => {
+    item.addEventListener('click', function() {
+      // Lấy giá trị data-category từ item
+      const selected = this.getAttribute('data-category');
+
+      // Ẩn tất cả danh mục
+      document.querySelectorAll('.product-category').forEach(category => {
+        category.style.display = 'none';
+      });
+
+      // Hiện danh mục được chọn
+      const target = document.querySelector(`.product-category[data-category="${selected}"]`);
+      if (target) {
+        target.style.display = 'flex';
+        target.style.flexWrap = 'wrap';
+        target.style.gap = '20px';
+      }
+
+      // Highlight item đang chọn
+      document.querySelectorAll('.sidebar ul li').forEach(li => li.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+</script>
+<script>
+  const hoverXedap = document.getElementById("hoverXedap");
+
+  hoverXedap.addEventListener("mouseenter", () => {
+    spBox.style.display = "flex";
+
+    // Chỉ hiện danh mục xe đạp điện
+    document.querySelectorAll('.product-category').forEach(category => {
+      category.style.display = 'none';
+    });
+    const xedap = document.querySelector('.product-category[data-category="xedap"]');
+    if (xedap) {
+      xedap.style.display = 'flex';
+      xedap.style.flexWrap = 'wrap';
+      xedap.style.gap = '20px';
+    }
+
+    // Cập nhật sidebar active nếu có
+    document.querySelectorAll('.sidebar ul li').forEach(li => li.classList.remove('active'));
+    const activeLi = document.querySelector('.sidebar ul li[data-category="xedap"]');
+    if (activeLi) activeLi.classList.add('active');
+  });
+</script>
+</body>
+</html>

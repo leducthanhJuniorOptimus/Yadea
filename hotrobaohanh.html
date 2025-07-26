@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hỗ Trợ & Bảo hành - YADEA Việt Nam</title>
+    <link rel="icon" href="image/logo-yadea.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="toibidot.css">
+    <link rel="stylesheet" href="thanh.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+                font-family: 'Montserrat', sans-serif;
+
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/Yadea/congnghe">Công Nghệ</a></li>
+            <li><a href="/Yadea/hotrobaohanh">Hỗ trợ bảo hành</a></li>
+            <li><a href="/Yadea/tintuc">Tin tức</a></li>
+            <li><a href="/Yadea/hoptac">Cơ Hội Hợp Tác</a></li>
+        </ul>
+    </nav>
+    <div class="menu">
+    <div class="logo">
+        <a href="/Yadea"><img src="image/logo-yadea.svg" alt="Logo Thương Hiệu"></a>
+    </div>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <div class="menu-nav" id="mainMenu">
+        <ul>
+            <li><a href="#" id="hoverXemay">Xe Máy Điện</a></li>
+            <li><a href="#" id="hoverXedap">Xe Đạp Điện</a></li>
+            <li><a href="/Yadea/ve-yadea">Về YADEA</a></li>
+            <li><a href="/Yadea/cuahang">Cửa Hàng</a></li>
+        </ul>
+    </div>
+
+    <div class="themgiohang">
+        <img src="image/themgiohang.jpg" width="40px" alt="Giỏ Hàng">
+    </div>
+</div>
+<div id="Tatcasanpham">
+  <div class="container">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-12 col-md-3 sidebar">
+        <h5>Các dòng sản phẩm</h5>
+        <ul class="list-group">
+          <li data-category="new">Sản phẩm mới</li>
+          <li data-category="city">Dòng City</li>
+          <li data-category="sport">Dòng Sport</li>
+          <li data-category="yadea">YADEA</li>
+        </ul>
+      </div>
+
+      <!-- Sản phẩm -->
+      <div class="col-12 col-md-9 product-grid">
+        <!-- Sản phẩm mới -->
+        <div class="row product-category" data-category="new">
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/Anh-V002P-chinh-480x389.png" alt="YADEA Voltguard P">
+            <p>YADEA Voltguard P</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/Orla-P-45-co-bong-480x389.png" alt="YADEA ORLA 2024">
+            <p>YADEA ORLA 2024</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/1807-chinh-anh-sang-oris-xanh-45-480x360.png" alt="YADEA ULike">
+            <p>YADEA Oris</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/anh-sp-ossy1-480x390.png" alt="YADEA ULike">
+            <p>YADEA OSSY</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <a href="thongtinsanpham/yadea-voltguard-u"><img src="image/V002-U-anh-chinh-1-480x361.png" alt="YADEA ULike"></a>
+            <p>YADEA VOLTGUARD U</p>
+          </div>
+        </div>
+
+        <!-- Dòng City -->
+        <div class="row product-category" data-category="city" style="display:none">
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/ocean-cyan-002-480x389.png" alt="City Bike 1">
+            <p>YADEA OCEAN</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/icute-1-480x422.png" alt="City Bike 2">
+            <p>YADEA ICUTE</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/odoras-white-1-480x389.png" alt="City Bike 2">
+            <p>YADEA ODORAS</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/m6i-img-480x389.png" alt="City Bike 2">
+            <p>YADEA M61i</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/virgo-black-1-480x389.png" alt="City Bike 2">
+            <p>YADEA VIRGO</p>
+          </div>
+        </div>
+
+        <!-- Dòng Sport -->
+        <div class="row product-category" data-category="sport" style="display:none">
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/xzone-cheo-xam-480x389.webp" alt="Sport Bike 1">
+            <p>YADEA Xzone</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/2-anh-cung-kich-thuoc-Vekoo-2-480x390.png" alt="Sport Bike 2">
+            <p>YADEA Vekko</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/xmen-1-480x390.png" alt="Sport Bike 2">
+            <p>YADEA Xmen Neo</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/2-anh-cung-kich-thuoc-XSKy-1-480x390.png" alt="Sport Bike 2">
+            <p>YADEA XSky</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/xbull-1-480x390.png" alt="Sport Bike 2">
+            <p>YADEA XBull</p>
+          </div>
+        </div>
+
+        <!-- YADEA -->
+        <div class="row product-category" data-category="yadea" style="display:none">
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/ossy.png" alt="YADEA Ossy">
+            <p>YADEA Ossy</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/V002-U-anh-chinh-1-480x361.png" alt="YADEA Voltguard U">
+            <p>YADEA Voltguard U</p>
+          </div>
+        </div>
+        <!-- Xe Đạp Điện -->
+        <div class="row product-category" data-category="xedap" style="display:none">
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/Anrh-nho-ben-tren-480x361-i8-gau-xanh-sua-480x361.png" alt="YADEA Bike 1">
+            <p>YADEA i8 VINTAGE</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/Anh-nho-ben-tren-480x361-1-480x361.png" alt="YADEA Bike 2">
+            <p>YADEA I8</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/product-i6-pin-lithium-480x389.png" alt="YADEA Bike 2">
+            <p>YADEA I6</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/YADEA-iFUN-anh-chinh-480x389.webp" alt="YADEA Bike 2">
+            <p>YADEA iFUN</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/igo-pink-1-480x389.png" alt="YADEA Bike 2">
+            <p>YADEA Igo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br><br><br><br>
+<div class="BaoHanh">
+    <div class="BaoHanhChu">
+        <strong>HỖ TRỢ VÀ BẢO HÀNH</strong>
+        <h6><a href="index.html"  class="lmaop">Trang Chủ</a>/ Hỗ Trợ & Bảo Hành </h6>
+    </div>
+</div>
+
+ <div class="ChiTietBaohanh">
+        <h1>Chính Sách Bảo Hành</h1>
+
+        <h4>1. Phạm Vi Bảo Hành</h4>
+        <ul>
+            <li>Các xe bán <strong>trước ngày 14/7/2023</strong>: Hưởng theo chính sách bảo hành tiêu chuẩn của Yadea Việt Nam.</li>
+            <li>Các xe bán ra <strong>sau ngày 14/7/2023</strong> (VOLTGUARD, ORLA, ODORA S, ODORA PRO, OCEAN, I8, I6, I-CUTE, I-COOL, VGOR, X-BULL, VEKOO, X-SKY, X-ZONE và xe mới ra mắt): Hưởng chính sách gói ba bảo hành tiêu chuẩn của Yadea Việt Nam với <strong>2 năm hoặc 20.000 km</strong> tùy điều kiện nào đến trước.</li>
+            <li><strong>Pin Lithium 48V12Ah</strong>: Bảo hành 24 tháng, đổi mới nguyên bộ.</li>
+            <li><strong>Bình ắc quy Graphene</strong>: Bảo hành 24 tháng, trong đó 18 tháng đầu đổi mới nguyên bình, 6 tháng tiếp theo đổi bình ắc quy bảo dưỡng.</li>
+            <li><strong>Bình ắc quy Thiên Năng</strong>: Bảo hành 12 tháng, trong đó 9 tháng đầu đổi mới, 3 tháng tiếp theo đổi bình ắc quy bảo dưỡng.</li>
+            <li>Từ <strong>01/03/2025</strong>: Model <strong>V002 U (YD300DT-31G)</strong> bản pin Lithium được hưởng chính sách bảo hành toàn xe trong <strong>3 năm hoặc 30.000 km</strong>, các xe còn lại vẫn theo chính sách gói ba bảo hành ban đầu.</li>
+        </ul>
+
+        <h4>2. Những Trường Hợp Không Thuộc Phạm Vi Bảo Hành</h4>
+        <ul>
+            <li>Sau khi mua hàng, các bộ phận hao mòn và tiêu hao tự nhiên (xem thêm ở Hướng dẫn sử dụng) sẽ không thuộc gói ba bảo hành.</li>
+            <li>Các trường hợp hư hỏng do không làm theo yêu cầu hướng dẫn trong Hướng dẫn sử dụng xe hoặc bảo dưỡng không đúng cách tại các cửa hàng, dịch vụ không chuyên nghiệp.</li>
+            <li>Các trường hợp hư hỏng do sử dụng vượt quá giới hạn thông số kỹ thuật do công ty quy định.</li>
+            <li>Các trường hợp thiệt hại, hư hỏng do tự ý sửa chữa không phải do kỹ thuật viên hệ thống đại lý Yadea ủy quyền chính hãng.</li>
+            <li>Các trường hợp thiệt hại do sử dụng quá mức trong các cuộc thi xe điện, xe máy, v.v.</li>
+            <li>Các trường hợp hư hỏng do không sử dụng linh kiện chính hãng của công ty Yadea.</li>
+            <li>Các sản phẩm thuộc loại hình khuyến mãi, quảng cáo, quà tặng thêm bị hỏng, lỗi sẽ không ảnh hưởng đến chức năng của xe.</li>
+            <li>Các trường hợp hư hỏng do thay đổi theo thời gian (mất màu tự nhiên, lớp mạ rỉ sét, v.v.).</li>
+            <li>Sự xuống cấp của các bộ phận (cao su, v.v.) và dầu mỡ do để lâu ngày.</li>
+            <li>Các vấn đề gây ra bởi các yếu tố bên ngoài như hành động ác ý, cố ý gây tổn hại.</li>
+            <li>Các vấn đề do khói bụi than, thuốc, dược phẩm, phân chim và xói mòn do có thành phần muối, mưa axit.</li>
+            <li>Thiệt hại trong các trường hợp bất khả kháng (động đất, bão, hỏa hoạn, lũ lụt, v.v.).</li>
+            <li>Hư hỏng do các yếu tố không đảm bảo chất lượng khác.</li>
+            <li>Không có hóa đơn, biên lai hoặc các chứng từ chứng minh đã mua xe Yadea chính hãng.</li>
+            <li>Bộ sạc, bộ điều khiển, v.v. có nhãn hiệu bị rách sẽ không được bảo hành và chìa khóa bị gãy bên trong.</li>
+            <li>Pin ắc quy bị chai, phồng, ngâm nước, hư hỏng do nguyên nhân bên ngoài, tất cả pin và phụ kiện đều không được đổi trả.</li>
+        </ul>
+
+        <h4>3. Bảo Dưỡng Xe</h4>
+        <p>Khách hàng mua xe điện chính hãng Yadea được bảo dưỡng miễn phí 5 lần trong 12 tháng kể từ ngày mua xe:</p>
+        <ul>
+            <li>Lần 1: 300km / 1 tháng</li>
+            <li>Lần 2: 2.500km / 3 tháng</li>
+            <li>Lần 3: 5.000km / 6 tháng</li>
+            <li>Lần 4: 7.500km / 9 tháng</li>
+            <li>Lần 5: 10.000km / 12 tháng</li>
+        </ul>
+        <p><strong>Ghi chú:</strong> Áp dụng tùy theo điều kiện nào đến trước. Yadea khuyến khích khách hàng bảo dưỡng định kỳ thường xuyên để nâng cao công năng sử dụng của xe cũng như kiểm soát được hành trình khi di chuyển trên đường.</p>
+    </div>
+     <div class="container">
+        <h2>Câu Hỏi Thường Gặp</h2>
+        <center><hr  width="100%" size="5px"/></center>        
+        <div class="CauHoiThuongGap">
+            <p>Hướng dẫn cách sạc điện: Tôi mới sử dụng nên cần được tư vấn và sử dụng sao cho đúng cách? <span class="arrow-down"></span></p>
+            <div class="HienThiCauTraLoi">
+                <p>Một số lưu ý khi sạc điện:</p>
+                <b>1.1 Khi mới mua xe</b>
+                <ul>
+                    <li>Trong 3 lần sạc đầu tiên, người dùng nên sạc để làm già ắc quy, tức là khi đèn báo sạc chuyển qua xanh, chúng ta nên tiếp tục cắm sạc khoảng 1-2 tiếng nữa rồi mới rút giắc sạc.</li>
+                    <li>Những lần sạc sau sạc bình thường, tức là đèn báo sạc chuyển xanh là rút giắc sạc.</li>
+                </ul>
+                <b>1.2 Trong quá trình sử dụng xe thường xuyên</b>
+                <ul>
+                    <li>Nên sạc xe điện khi dung lượng điện còn khoảng 40%. Nếu sử dụng kiệt lượng điện trong Pin/Ắc quy sẽ dẫn đến một số trường hợp:</li>
+                    <li>Kiệt điện tạo áp lực quá lớn cho Pin/Ắc quy, lâu ngày làm giảm tuổi thọ của Ắc quy.</li>
+                    <li>Không đảm bảo quá trình di chuyển.</li>
+                    <li>Trên xe Yadea khi sử dụng ta ga đều đặn mà màn hình tuột 1-2 vạch Pin thì nên sạc cho xe.</li>
+                    <li>Sử dụng bộ sạc chính hãng YADEA dùng cho model của xe.</li>
+                    <li>Xe mới đi về không nên cắm sạc ngay , chờ ít nhất 30 phút- 1 tiếng mới bắt đầu cắm sạc điện vào xe</li>
+                    <li>Trong quá trình sạc, nếu đèn báo không bình thường, có mùi khét hoặc vỏ sạc quá nóng thì hãy dừng sạc ngay lập tức và kiểm tra tình trạng của sạc và xe. Có thể thay sạc điện khác nếu phát hiện bất thường.</li>
+                    <li>Giắc cắm sạc phải khô ráo và không có vật lạ làm cản trở.</li>
+                    <li>Khi kết nối bộ sạc với xe thì cần cắm chặt giắc cắm.</li>
+                    <li>Hạn chế sạc điện qua đêm tại những nơi có nhiệt độ cao, dễ cháy nổ.</li>
+                    <li>Kiểm tra nguồn cấp điện đầu vào cho sạc điện: dây dẫn, ổ cắm, thông số chịu tải của dòng điện.</li>
+                </ul>
+            </div>
+        </div>
+        <center><hr  width="100%" size="5px"/></center>
+        <div class="CauHoiThuongGap">
+            <p>Điều kiện bảo hành cho xe Yadea thế nào?<span class="arrow-down"></span></p>
+            <div class="HienThiCauTraLoi">
+                <p>Để thỏa mãn điều kiện bảo hành cho xe Yadea bao gồm đầy đủ 3 tiêu chí:</p>
+                <ul>
+                    <li>Phụ tùng còn thời gian bảo hành</li>
+                    <li>Phụ tùng phải có vấn đề</li>
+                    <li>Ngoại quan của phụ tùng phải bình thường, không móp méo do tác động của ngoại quan</li>
+                </ul>
+            </div>
+        </div>
+        <center><hr  width="100%" size="5px"/></center>
+        <div class="CauHoiThuongGap">
+            <p>Tôi có thể bảo dưỡng xe điện Yadea ở đâu?<span class="arrow-down"></span></p>
+            <div class="HienThiCauTraLoi">
+                <p>Nơi Bảo Hành Là :</p>
+                <ul>
+                    <li>Tại đại lý Yadea chính hãng nơi mà khách hàng mua xe</li>
+                    <li>Trường hợp khách hàng ở xa có thể liên hệ tổng đài hotline để được hỗ trợ tìm đại lý chính hãng gần nhất</li>
+                </ul>
+            </div>
+        </div>
+        <center><hr  width="100%" size="5px"/></center>
+        <div class="CauHoiThuongGap">
+            <p>Phụ tùng Yadea có sẵn để khách thay thế khi sửa chữa không?<span class="arrow-down"></span></p>
+            <div class="HienThiCauTraLoi">
+                <p>Hiện tại phụ tùng Yadea luôn có sẵn để khách hàng có thể thay thế và sửa chữa. Cần mua phụ tùng vui lòng liên hệ đại lý ủy quyền gần nhất để được hỗ trợ</p>
+            </div>
+        </div>
+        <center><hr  width="100%" size="5px"/></center>
+        <div class="CauHoiThuongGap">
+            <p>Mua linh kiện chính hãng của Yadea như thế nào?<span class="arrow-down"></span></p>
+            <div class="HienThiCauTraLoi">
+                <p>Hiện Yadea đã có hơn 680 đại lý ủy quyền chính hãng trên toàn quốc, quý khách hàng có nhu cầu mua linh kiện chính hãng có thể liên hệ cửa hàng ủy quyền của Yadea gần nhất để được hỗ trợ</p>
+            </div>
+        </div>
+        <center><hr  width="100%" size="5px"/></center>
+    </div>
+    <footer>
+    <div class="LienHe">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-3">
+                    <div class="LienHeCongTy">
+                        <img src="image/logo-yadea.svg" alt="Logo Công Ty" style="max-width: 150px;">
+                        <p><strong>CÔNG TY TNHH ELECTRIC MOTORCYCLE YADEA VIỆT NAM</strong></p>
+                        <p>Mã Số Thuế: 2400866767 do Sở KHĐT Tỉnh Bắc Giang cấp lần đầu ngày 27/06/2019.</p>
+                        <p><strong>Địa Chỉ:</strong> Lô O1-2... Quang Châu, Việt Yên, Bắc Giang, Việt Nam.</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer-list">
+                        <p><strong>Sản phẩm mới</strong></p>
+                        <li><a href="#">YADEA Ossy</a></li>
+                        <li><a href="#">YADEA Voltguard</a></li>
+                        <li><a href="#">YADEA Oris</a></li>
+                        <li><a href="#">YADEA Orla 2024</a></li>
+                        <li><a href="#">YADEA iFUN</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer-list">
+                        <p><strong>Về Chúng Tôi</strong></p>
+                        <li><a href="#">Về YADEA</a></li>
+                        <li><a href="#">Cửa Hàng</a></li>
+                        <li><a href="#">Công Nghệ</a></li>
+                        <li><a href="#">Tin Tức</a></li>
+                        <li><a href="#">Tuyển Dụng</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer-list">
+                        <p><strong>Hỗ Trợ</strong></p>
+                        <li><a href="#">Hỗ Trợ & Bảo Hành</a></li>
+                        <li><a href="#">Thanh Toán</a></li>
+                        <li><a href="#">Vận Chuyển</a></li>
+                        <li><a href="#">Chính Sách Đổi Trả</a></li>
+                        <li><a href="#">Chính Sách Bảo Mật</a></li>
+                        <li><a href="#">Cơ Hội Hợp Tác</a></li>
+                        <li><a href="#">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <p><strong>Theo Dõi YADEA</strong></p>
+                    <div class="social-media">
+                        <img src="image/facebook.jpg" alt="Facebook">
+                        <img src="image/tiktok.png" alt="TikTok">
+                        <img src="image/tải xuống.jpg" alt="Instagram">
+                        <img src="image/youtube.png" alt="YouTube">
+                        <img src="image/zalo.png" alt="Zalo">
+                    </div>
+                    <div class="contact-info">
+                        <p><strong>CSKH:</strong> 1900636803</p>
+                        <p><strong>Liên Hệ Hợp Tác:</strong> (+84) 204 6299 288</p>
+                        <p><strong>Email:</strong> market@yadea.com.vn</p>
+                    </div>
+                    <img src="image/logoSaleNoti-300x114.png" alt="Chứng nhận" style="max-width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('mainMenu');
+        menu.classList.toggle('active');
+    }
+    document.querySelectorAll('.CauHoiThuongGap').forEach(item => {
+            const question = item.querySelector('p');
+            const arrow = item.querySelector('.arrow-down');
+            const answer = item.querySelector('.HienThiCauTraLoi');
+
+            question.addEventListener('click', () => {
+                answer.classList.toggle('active');
+                arrow.classList.toggle('active');
+            });
+
+            arrow.addEventListener('click', () => {
+                answer.classList.toggle('active');
+                arrow.classList.toggle('active');
+            });
+        });
+    </script>
+        <script>
+  const hoverLink = document.getElementById("hoverXemay");
+  const spBox = document.getElementById("Tatcasanpham");
+
+  hoverLink.addEventListener("mouseenter", () => {
+    spBox.style.display = "flex";
+  });
+
+  hoverLink.addEventListener("mouseleave", () => {
+    setTimeout(() => {
+      if (!spBox.matches(':hover')) {
+        spBox.style.display = "none";
+      }
+    }, 200);
+  });
+
+  spBox.addEventListener("mouseleave", () => {
+    spBox.style.display = "none";
+  });
+
+  spBox.addEventListener("mouseenter", () => {
+    spBox.style.display = "flex";
+  });
+</script>
+<script>
+  // Xử lý click vào danh mục sản phẩm
+  document.querySelectorAll('.sidebar ul li').forEach(item => {
+    item.addEventListener('click', function() {
+      // Lấy giá trị data-category từ item
+      const selected = this.getAttribute('data-category');
+
+      // Ẩn tất cả danh mục
+      document.querySelectorAll('.product-category').forEach(category => {
+        category.style.display = 'none';
+      });
+
+      // Hiện danh mục được chọn
+      const target = document.querySelector(`.product-category[data-category="${selected}"]`);
+      if (target) {
+        target.style.display = 'flex';
+        target.style.flexWrap = 'wrap';
+        target.style.gap = '20px';
+      }
+
+      // Highlight item đang chọn
+      document.querySelectorAll('.sidebar ul li').forEach(li => li.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+</script>
+<script>
+  const hoverXedap = document.getElementById("hoverXedap");
+
+  hoverXedap.addEventListener("mouseenter", () => {
+    spBox.style.display = "flex";
+
+    // Chỉ hiện danh mục xe đạp điện
+    document.querySelectorAll('.product-category').forEach(category => {
+      category.style.display = 'none';
+    });
+    const xedap = document.querySelector('.product-category[data-category="xedap"]');
+    if (xedap) {
+      xedap.style.display = 'flex';
+      xedap.style.flexWrap = 'wrap';
+      xedap.style.gap = '20px';
+    }
+
+    // Cập nhật sidebar active nếu có
+    document.querySelectorAll('.sidebar ul li').forEach(li => li.classList.remove('active'));
+    const activeLi = document.querySelector('.sidebar ul li[data-category="xedap"]');
+    if (activeLi) activeLi.classList.add('active');
+  });
+</script>
+</body>
+</html>
