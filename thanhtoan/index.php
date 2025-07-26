@@ -187,7 +187,7 @@ $showrooms = [
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thanh Toán - YADEA VIỆT NAM</title>
-    <link rel="stylesheet" href="../anhthanh.css">
+  <link rel="stylesheet" href="../style.css">
     <link rel="icon" href="../image/logo-yadea.svg" type="../image/svg+xml">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
