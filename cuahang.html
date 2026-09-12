@@ -1,0 +1,1689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa Hàng - YADEA Việt Nam</title>
+    <link rel="stylesheet" href="thanh.css">
+    <link rel="stylesheet" href="anhteo.css">
+    <link rel="icon" href="image/logo-yadea.svg" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <style>
+        
+        .toibingu img{
+            padding-top: 10px;
+        }
+          .header {
+      background: #f60;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .filters {
+            border: 1px solid #f2f2f4;
+      display: flex;
+      padding: 10px;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    select {
+            border: 1px solid #f2f2f4;
+      padding: 8px 12px;
+      border-radius: 5px;
+      min-width: 180px;
+    }
+
+    .shop-list {
+            border: 1px solid #f2f2f4;
+      max-height: 1000px; 
+      overflow-y: auto;   
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .shop {
+      padding: 15px;
+      border-top: 1px solid #eee;
+    }
+
+    .shop:first-child {
+      border-top: none;
+    }
+
+    .shop-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    .shop-info {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .shop-icon {
+      color: #f60;
+      margin-right: 6px;
+    }
+
+    .phone {
+      display: block;
+      margin-top: 5px;
+      font-weight: bold;
+    }
+
+    ::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+ .shop-list::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+
+}
+ 
+/* Handle */
+ .shop-list::-webkit-scrollbar-thumb {
+  background: #FF5F00; 
+}
+
+/* Handle on hover */
+ .shop-list::-webkit-scrollbar-thumb:hover {
+  background: #FF5F00; 
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/Yadea/congnghe">Công Nghệ</a></li>
+            <li><a href="/Yadea/hotrobaohanh">Hỗ trợ bảo hành</a></li>
+            <li><a href="/Yadea/tintuc">Tin tức</a></li>
+            <li><a href="/Yadea/hoptac">Cơ Hội Hợp Tác</a></li>
+        </ul>
+    </nav>
+    <div class="menu">
+    <div class="logo">
+        <a href="/Yadea"><img src="image/logo-yadea.svg" alt="Logo Thương Hiệu"></a>
+    </div>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <div class="menu-nav" id="mainMenu">
+        <ul>
+            <li><a href="#" id="hoverXemay">Xe Máy Điện</a></li>
+            <li><a href="#" id="hoverXedap">Xe Đạp Điện</a></li>
+            <li><a href="/Yadea/ve-yadea">Về YADEA</a></li>
+            <li><a href="/Yadea/cuahang" style="color: #FF5F00;">Cửa Hàng</a></li>
+        </ul>
+    </div>
+
+    <div class="themgiohang">
+        <img src="image/themgiohang.jpg" width="40px" alt="Giỏ Hàng">
+    </div>
+</div>
+<div id="Tatcasanpham">
+  <div class="container">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-12 col-md-3 sidebar">
+        <h5>Các dòng sản phẩm</h5>
+        <ul class="list-group">
+          <li data-category="new">Sản phẩm mới</li>
+          <li data-category="city">Dòng City</li>
+          <li data-category="sport">Dòng Sport</li>
+          <li data-category="yadea">YADEA</li>
+        </ul>
+      </div>
+
+      <!-- Sản phẩm -->
+      <div class="col-12 col-md-9 product-grid">
+        <!-- Sản phẩm mới -->
+        <div class="row product-category" data-category="new">
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/Anh-V002P-chinh-480x389.png" alt="YADEA Voltguard P">
+            <p>YADEA Voltguard P</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/Orla-P-45-co-bong-480x389.png" alt="YADEA ORLA 2024">
+            <p>YADEA ORLA 2024</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/1807-chinh-anh-sang-oris-xanh-45-480x360.png" alt="YADEA ULike">
+            <p>YADEA Oris</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/anh-sp-ossy1-480x390.png" alt="YADEA ULike">
+            <p>YADEA OSSY</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <a href="thongtinsanpham/yadea-voltguard-u"><img src="image/V002-U-anh-chinh-1-480x361.png" alt="YADEA ULike"></a>
+            <p>YADEA VOLTGUARD U</p>
+          </div>
+        </div>
+
+        <!-- Dòng City -->
+        <div class="row product-category" data-category="city" style="display:none">
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/ocean-cyan-002-480x389.png" alt="City Bike 1">
+            <p>YADEA OCEAN</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/icute-1-480x422.png" alt="City Bike 2">
+            <p>YADEA ICUTE</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/odoras-white-1-480x389.png" alt="City Bike 2">
+            <p>YADEA ODORAS</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/m6i-img-480x389.png" alt="City Bike 2">
+            <p>YADEA M61i</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/virgo-black-1-480x389.png" alt="City Bike 2">
+            <p>YADEA VIRGO</p>
+          </div>
+        </div>
+
+        <!-- Dòng Sport -->
+        <div class="row product-category" data-category="sport" style="display:none">
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/xzone-cheo-xam-480x389.webp" alt="Sport Bike 1">
+            <p>YADEA Xzone</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/2-anh-cung-kich-thuoc-Vekoo-2-480x390.png" alt="Sport Bike 2">
+            <p>YADEA Vekko</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/xmen-1-480x390.png" alt="Sport Bike 2">
+            <p>YADEA Xmen Neo</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/2-anh-cung-kich-thuoc-XSKy-1-480x390.png" alt="Sport Bike 2">
+            <p>YADEA XSky</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/xbull-1-480x390.png" alt="Sport Bike 2">
+            <p>YADEA XBull</p>
+          </div>
+        </div>
+
+        <!-- YADEA -->
+        <div class="row product-category" data-category="yadea" style="display:none">
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/ossy.png" alt="YADEA Ossy">
+            <p>YADEA Ossy</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/V002-U-anh-chinh-1-480x361.png" alt="YADEA Voltguard U">
+            <p>YADEA Voltguard U</p>
+          </div>
+        </div>
+        <!-- Xe Đạp Điện -->
+        <div class="row product-category" data-category="xedap" style="display:none">
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/Anrh-nho-ben-tren-480x361-i8-gau-xanh-sua-480x361.png" alt="YADEA Bike 1">
+            <p>YADEA i8 VINTAGE</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/Anh-nho-ben-tren-480x361-1-480x361.png" alt="YADEA Bike 2">
+            <p>YADEA I8</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/product-i6-pin-lithium-480x389.png" alt="YADEA Bike 2">
+            <p>YADEA I6</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/YADEA-iFUN-anh-chinh-480x389.webp" alt="YADEA Bike 2">
+            <p>YADEA iFUN</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 product-item">
+            <img src="image/igo-pink-1-480x389.png" alt="YADEA Bike 2">
+            <p>YADEA Igo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br><br><br><br>
+
+<main style="background-color: white;">
+  <div class="container bg-white">
+    <div class="row">
+      <!-- Bên trái -->
+      <div class="col-6">
+        <h2 style="text-transform: uppercase; font-weight: 600;">Hệ Thống SHOWROOM YADEA</h2>
+        <div>
+          Được thành lập vào năm 2001, với hơn 23 năm kinh nghiệm trong ngành, YADEA tự hào là
+          <b style="color: #FF5F00;">thương hiệu đứng số 1 toàn cầu</b> về
+          <b style="color: #FF5F00;">doanh số bán hàng</b> trong
+          <b style="color: #FF5F00;">8 năm liên tiếp</b>, chuyên phân phối các sản phẩm xe máy điện, xe đạp điện, scooter.
+        </div>
+        <div class="stats-container" data-aos="fade-up" data-aos-delay="200">
+          <div class="stat-item">
+            Mạng lưới <span class="stat-number" style="color: #FF5F00 !important;">63</span> Tỉnh/Thành Phố
+          </div>
+          <div class="stat-item">
+            Hệ Thống <span class="stat-number" style="color: #FF5F00 !important;">200+</span> Cửa Hàng Brand Shop
+          </div>
+        </div>
+        <div>
+          Với mạng lưới cửa hàng trên toàn quốc, showroom YADEA không chỉ mang đến cho bạn những mẫu xe điện hiện đại,
+          thời thượng, mà còn cung cấp dịch vụ tư vấn tận tình từ đội ngũ nhân viên chuyên nghiệp...
+        </div>
+        <h5 style="font-weight: 600;">Hình ảnh nhận diện hệ thống của hàng YADEA Shop</h5>
+        <div class="toibingu" style="padding:10px;">
+          <img src="image/AnyConv.com__edcf9d3d-eec6-4359-9579-ddeede9e6049.webp"   width="250px" alt="Hệ Thống của hàng của YADEA">
+          <img src="image/AnyConv.com__e620c6f7-b51a-433f-9f23-49252d2921fe.webp" width="250px" alt="Hệ Thống của hàng của YADEA">
+          <img src="image/AnyConv.com__b24476c0-f1c3-489e-b5cf-65ab22b9da79.webp" width="250px" alt="Hệ thống của hàng của YADEA"> 
+          <img src="image/AnyConv.com__67b66b0f-d9aa-4a6e-afde-422cd500c243.webp" width="250px" alt="Hệ thống của hàng của YADEA">
+          <img src="image/AnyConv.com__4d7037e5-eb80-4397-819c-14f61618c496.webp" width="250px" alt="Hệ Thống cửa hàng của YADEA">
+         <img src="image/AnyConv.com__0a38ca8c-e217-4c44-b7c9-08e86a0e4865.webp" width="250px" alt="Hệ Thống của hàng của YADEA">
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="header">TÌM CỬA HÀNG GẦN BẠN</div>
+
+        <div class="filters">
+          <select>
+            <option selected disabled>Chọn Tỉnh / Thành Phố</option>
+          </select>
+          <select>
+            <option selected disabled>Chọn Quận / Huyện</option>
+          </select>
+        </div>
+    <ul class="shop-list">
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Hưng Lộc Phát</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Khu Phố Ninh Thịnh, Thị Trấn Lộc Ninh, Huyện Lộc Ninh, Tỉnh Bình Phước<br>
+                📞 0974 535 356
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Xe Hai Bánh</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 791-793 Ngô Gia Tự, Đức Giang, Quận Long Biên, Thành Phố Hà Nội<br>
+                📞 0908 795 795
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Bách Đại Dũng</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Khối 2, Thị Trấn Phố Châu, Huyện Hương Sơn, Tỉnh Hà Tĩnh<br>
+                📞 0915 367 888
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Đức Minh</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Cụm CN Tập Trung, Thị Trấn Cao Thượng, Huyện Tân Yên, Tỉnh Bắc Giang<br>
+                📞 0987 770 607
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Trần Cương</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 248 Đường Trần Đăng Ninh, Phường Hoàng Văn Thụ, Thành Phố Lạng Sơn, Tỉnh Lạng Sơn<br>
+                📞 0913 517 762
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Hòa Điệp</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số 320 Lê Lợi, Phường Lê Lợi, Quận Ngô Quyền, Thành Phố Hải Phòng<br>
+                📞 0982 322 885
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Thưởng Lan</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số Nhà 93-95, Phú Cường, Phong Châu, Thị Xã Phú Thọ, Tỉnh Phú Thọ<br>
+                📞 0914 913 520
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Thanh Tùng</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 175 Đò Quan, Phường Cửa Nam, Thành Phố Nam Định, Tỉnh Nam Định<br>
+                📞 0948 681 091
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Duy Hùng</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Duy Hùng 2, Khu Rừng Mận, Thị Trấn Phong Châu, Huyện Phù Ninh, Tỉnh Phú Thọ<br>
+                📞 0968 963 472
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Đức Hòa – 9 Hoàng Văn Thụ</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số 9 Hoàng Văn Thụ, Phường Phan Đình Phùng, Thành Phố Thái Nguyên, Tỉnh Thái Nguyên<br>
+                📞 0384 375 059
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Thiện Anh</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 774 Điện Biên, Tổ Dân Phố Số 8, Phường Minh Tân, Thành Phố Yên Bái, Tỉnh Yên Bái<br>
+                📞 0868 930 000
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Mai Châu</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 461 Chu Văn Thịnh, Phường Chiềng Lề, Thành Phố Sơn La, Tỉnh Sơn La<br>
+                📞 0973 755 666
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Hoàn Thúy</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Thôn Xuân Tiến, Xã Dân Lực, Huyện Triệu Sơn, Tỉnh Thanh Hóa<br>
+                📞 0987 016 919
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Hoàn Hảo</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Xã Bình Phú, Huyện Thạch Thất, Thành Phố Hà Nội<br>
+                📞 0834 561 990
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Đoàn Gia Trang</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 132 Phượng Bãi, Phường Biên Giang, Quận Hà Đông, Thành Phố Hà Nội<br>
+                📞 0934 349 349
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Thanh Tâm</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số 205 Phùng Khắc Khoan, Phường Quang Trung, Thị Xã Sơn Tây, Thành Phố Hà Nội<br>
+                📞 0915 588 886
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Đạt Thắng</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số 76-78-80 Tổ 5, Thị Trấn Sóc Sơn, Huyện Sóc Sơn, Thành Phố Hà Nội<br>
+                📞 0912 816 638
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Việt Thanh – Chính Thanh</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Ngã Tư Cầu Lường, Xã Quang Thịnh, Huyện Lạng Giang, Tỉnh Bắc Giang<br>
+                📞 0979 550 668
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Việt Thanh – TP Bắc Ninh</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 1A Nguyễn Trãi, Phường Ninh Xá, Thành Phố Bắc Ninh, Tỉnh Bắc Ninh<br>
+                📞 0987 972 299
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Bình Hương</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 397 Vạn Xuân, Huyện Hoài Đức, Thành Phố Hà Nội<br>
+                📞 0934 024 689
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Kiên Huyền</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 412-418 Nguyễn Chế Nghĩa, Thị Trấn Gia Lộc, Huyện Gia Lộc, Tỉnh Hải Dương<br>
+                📞 0903 435 888
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Hương Lụa</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số 239 - KDC Nguyễn Trãi 2, Phường Sao Đỏ, Thành Phố Chí Linh, Tỉnh Hải Dương<br>
+                📞 0946 639 999
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Ứng Tâm 2</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Thôn Quyết Thắng, Xã Kim Anh, Huyện Kim Thành, Tỉnh Hải Dương<br>
+                📞 0987 728 728
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Đức Hiệu</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số 93 Đường Nguyễn Lương Bằng, Khu 3, Thị Trấn Ninh Giang, Huyện Ninh Giang, Tỉnh Hải Dương<br>
+                📞 0912 098 202
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Liên Đá – Tân Thành, Kim Sơn</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Quốc Lộ 10, Xóm 7, Xã Tân Thành, Huyện Kim Sơn, Tỉnh Ninh Bình<br>
+                📞 0229 7309 868
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Long Tơ</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Lam Sơn, Đông Hòa, Thị Trấn Nông Công, Huyện Nông Cống, Tỉnh Thanh Hóa<br>
+                📞 0966 947 889
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Chung Dung</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Phố Neo, Xã Nam Giang, Huyện Thọ Xuân, Tỉnh Thanh Hóa<br>
+                📞 0978 888 822
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Ngân Hà – 04 Trần Phú</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số 04, Đường Trần Phú, Phường Hồng Sơn, Thành Phố Vinh, Tỉnh Nghệ An<br>
+                📞 0912 044 268
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Hải Quân</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Thôn 7, Xã Diễn Kỷ, Huyện Diễn Châu, Tỉnh Nghệ An<br>
+                📞 0917 802 545
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Toàn Phát – Ngô Quyền</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 215 Ngô Quyền, Phường Tân An, Thành Phố Buôn Ma Thuột, Tỉnh Đắk Lắk<br>
+                📞 0902 898 707
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Phương Nghi</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Ngã 4 Đường Mới, Xã Đức Minh, Huyện Đăk Mil, Tỉnh Đắk Nông<br>
+                📞 0908 906 194
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Tân Bảo Long</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Tổ Dân Phố 1, Thị Trấn Đắk Mâm, Huyện Krông Nô, Tỉnh Đắk Nông<br>
+                📞 0933 694 444
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Phi Hùng</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 20/1B Ấp Đức Long, Gia Tân 2, Huyện Thống Nhất, Tỉnh Đồng Nai<br>
+                📞 0982 889 742
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Thế Giới Xe Đạp Vũng Tàu</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 323 Nguyễn An Ninh, Phường 9, Thành Phố Vũng Tàu, Tỉnh Bà Rịa - Vũng Tàu<br>
+                📞 0359 527 272
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Huy Linh – Vũ Văn Cẩn</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số 8, Đường Vũ Văn Cẩn, Phường Bần Yên Nhân, Thị Xã Mỹ Hào, Hưng Yên<br>
+                📞 0918 583 818
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Vĩnh Huyền</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Thôn Trung Nghĩa, Xã Nghĩa Hồ, Huyện Lục Ngạn, Tỉnh Bắc Giang<br>
+                📞 0376 953 166
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Phong Loan</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Đường Hoàng Hoa Thám, Thị Trấn Neo, Huyện Yên Dũng, Tỉnh Bắc Giang<br>
+                📞 0344 107 791
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Ngọ Hương</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số 11 Phố Thanh Hưng, Thị Trấn Đồi Ngô, Huyện Lục Nam, Tỉnh Bắc Giang<br>
+                📞 0982 091 798
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Minh Giang</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số 56 Khu 3, TT Phố Mới, Huyện Quế Võ, Tỉnh Bắc Ninh<br>
+                📞 0989 616 893
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Anh Cường</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 75 Yên Trung, Thị Trấn Đức Thọ, Huyện Đức Thọ, Tỉnh Hà Tĩnh<br>
+                📞 0975 736 232
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Siêu Tốc Độ</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 268 Đường Hoàng Liên Sơn, Thị Xã Nghĩa Lộ, Tỉnh Yên Bái<br>
+                📞 0912 018 537
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Việt Thanh – 521 Nguyễn Trãi</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 521 Nguyễn Trãi, Phường Thanh Xuân Nam, Quận Thanh Xuân, Thành Phố Hà Nội<br>
+                📞 0916 872 266
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Chuẩn Phát</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> LK 02, Dự Án Hưng Lộc Home, Số 389 Đường Lê Viết Thuật, Thành Phố Vinh, Tỉnh Nghệ An<br>
+                📞 0912186586
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Hoàng Cầu</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 563 Nguyễn Tri Phương, Phường An Bình, Thành Phố Dĩ An, Tỉnh Bình Dương<br>
+                📞 0986849999
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Quang Phương – 131 Châu Văn Liêm</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 131 Châu Văn Liêm, Phường 14, Quận 5, Thành Phố Hồ Chí Minh<br>
+                📞 0903331601
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Hồng Anh 2</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 23/1 Ấp Thanh Hóa, Xã Hố Nai 3, Huyện Trảng Bom, Tỉnh Đồng Nai<br>
+                📞 0988324409
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Xe Điện Tốt Hoà Bình</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Tổ 5 - Đường Chi Lăng - Phường Tân Thịnh, Thành Phố Hoà Bình, Tỉnh Hoà Bình<br>
+                📞 0966888887
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Thọ Huyền</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Tổ Dân Số 4, Đông Hòa, Thị Trấn Hòa Mạc, Huyện Duy Tiên, Tỉnh Hà Nam<br>
+                📞 0913222135
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Duy Đức</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 215A Trần Hưng Đạo, Bồng Sơn, Thị Xã Hoài Nhơn, Tỉnh Bình Định<br>
+                📞 0935714689
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Yên Phong</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Đường 286, Chợ Chờ, Huyện Yên Phong, Tỉnh Bắc Ninh<br>
+                📞 0852315599
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Tuấn Tú</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Thôn 2, Xã Tông Lạnh, Huyện Thuận Châu, Tỉnh Sơn La<br>
+                📞 0988230886
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Đức Tâm</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số 35, Khối 5, Thị Trấn Krong Kmar, Huyện Krong Bông, Tỉnh Đắk Lắk<br>
+                📞 0982732409
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Phùng Hoan</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 116-118-120-122 Nguyễn Tất Thành, Phường Hoa Lư, Thành Phố Pleiku, Tỉnh Gia Lai<br>
+                📞 02693718718
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Nhạn Hùng – Quảng Bình</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 278-280 Trần Hưng Đạo, Thành Phố Đồng Hới, Tỉnh Quảng Bình<br>
+                📞 0974740738
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Xe Điện Max – 103 Hoàng Văn Thụ</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 103 Hoàng Văn Thụ, Phường 08, Quận Phú Nhuận, Thành Phố Hồ Chí Minh<br>
+                📞 0919691620
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Xe Điện Max – 60 Lũy Bán Bích</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 60 Lũy Bán Bích, Phường Tân Thới Hòa, Quận Tân Phú, Thành Phố Hồ Chí Minh<br>
+                📞 0919691620
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Quốc Hùng – TP Long Khánh</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 50, Đường Khổng Tử, Phường Xuân Trung, Thành Phố Long Khánh, Tỉnh Đồng Nai<br>
+                📞 0902 464 124
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Việt Hồng Chinh – 346 Lê Duẩn</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 346 Lê Duẩn, Phường Đông Lễ, Thành Phố Đông Hà, Tỉnh Quảng Trị<br>
+                📞 0943 999 346
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Hà Thành</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 87 Nguyễn Thị Tú, Bình Hưng Hoà B, Quận Bình Tân, Thành Phố Hồ Chí Minh<br>
+                📞 0979 569 779
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop TT-EV</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 136 Cao Đức Lân, Phường An Phú, Quận 2, Thành Phố Thủ Đức, Hồ Chí Minh<br>
+                📞 0916 160 679
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Quang Phương – 105 Nguyễn Tri Phương</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 105 Nguyễn Tri Phương, Phường 9, Quận 5, Thành Phố Hồ Chí Minh<br>
+                📞 0903 331 601
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Xe Điện Xanh Sài Gòn – Thủ Đức</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số 2, Quốc Lộ 1K, Linh Xuân, Thủ Đức, Thành Phố Hồ Chí Minh<br>
+                📞 0934 101 969
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Xe Điện Xanh Sài Gòn – 787 Quang Trung</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 785-787 Quang Trung, Phường 12, Quận Gò Vấp, Thành Phố Hồ Chí Minh<br>
+                📞 0934 101 969
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Việt Thanh – 127 Phạm Văn Đồng</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số 127 Phạm Văn Đồng, Phường Mai Dịch, Quận Cầu Giấy, Thành Phố Hà Nội<br>
+                📞 0986 915 959
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Việt Thanh – Hai Bà Trưng</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 75 Đại Cồ Việt, Quận Hai Bà Trưng, Thành Phố Hà Nội<br>
+                📞 0981 319 559
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Thanh Tùng</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Ngã Tư Dực Liễn, Xã Thủy Sơn, Huyện Thủy Nguyên, Thành Phố Hải Phòng<br>
+                📞 0934 271 479
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Việt Thanh – TP Bắc Giang</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Lô 5-6-7-8 Toà 2 Đại Hoàng Sơn, Xương Giang, Ngô Quyền, TP Bắc Giang, Bắc Giang<br>
+                📞 0985 959 339
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Khiêm Huyền</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 81 Hai Bà Trưng, Thị Trấn Lim, Huyện Tiên Du, Tỉnh Bắc Ninh<br>
+                📞 0911 654 686
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Toàn Phát – Cư Mga</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Thôn Tiến Thịnh, Xã Quảng Tiến, Huyện Cư Mga, Tỉnh Đắk Lắk<br>
+                📞 0902 898 707
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Xe Điện Tuyên Tư</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 452 Giải Phóng, Thị Trấn Phước An, Huyện Krong Pắc, Tỉnh Đắk Lắk<br>
+                📞 0978 266 209
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Phú Hương</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Thôn Kim Châu, Xã Dray Bhăng, Huyện Cư Kuin, Tỉnh Đắk Lắk<br>
+                📞 0949 499 004
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Hoàng 5</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 37 Nguyễn Ái Quốc, Xã Phú Vinh, Huyện Định Quán, Tỉnh Đồng Nai<br>
+                📞 0917 181 914
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Liên Đá – Cồn Thoi, Kim Sơn</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Xóm 9, Xã Cồn Thoi, Huyện Kim Sơn, Tỉnh Ninh Bình<br>
+                📞 0229 7309 868
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Duy Hùng 4</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Khu 19/5, Phố Vàng, Thị Trấn Thanh Sơn, Huyện Thanh Sơn, Tỉnh Phú Thọ<br>
+                📞 0968 963 472
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Việt Hồng Chinh – TX Quảng Trị</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 177 Lê Duẩn, Thị Xã Quảng Trị, Tỉnh Quảng Trị<br>
+                📞 0942 049 111
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Thắng Huyền</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Khu Thị Tứ Tư La, Xã Minh Khai, Thị Trấn Hưng Hà, Huyện Hưng Hà, Tỉnh Thái Bình<br>
+                📞 0934 445 588
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Thanh Giang</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Xóm Đồng Màn, Xã Bảo Cường, Huyện Định Hóa, Tỉnh Thái Nguyên<br>
+                📞 0983 880 150
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Huy Tuyết</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Tổ Dân Phố 1, Thị Trấn Hương Sơn, Huyện Phú Bình, Tỉnh Thái Nguyên<br>
+                📞 0978 961 889
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Hậu Dung</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số Nhà 86, Khu 1, Tt. Kim Tân, Huyện Thạch Thành, Tỉnh Thanh Hóa<br>
+                📞 0912 501 966
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Nam Bình – TP Cà Mau</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số 133 - 135, Đường Nguyễn Tất Thành, Phường 8, Thành Phố Cà Mau, Tỉnh Cà Mau<br>
+                📞 19008090 - 0918212821
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Tươi Nghị</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số A18/1, Đường Võ Thị Sáu, Khóm 2, Phường 8, Thành Phố Bạc Liêu, Tỉnh Bạc Liêu<br>
+                📞 0949 114 224
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Thanh Phong</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 160-162-164-166 Đường Trần Hưng Đạo, Khóm 2, Phường An Thạnh, Thành Phố Hồng Ngự, Tỉnh Đồng Tháp<br>
+                📞 0918 530 046
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Việt Trung</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Tổ Dân Phố 4, Thị Trấn Sông Mã, Huyện Sông Mã, Tỉnh Sơn La<br>
+                📞 0342 933 385
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Phong Gia ITC – Bình Dương</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 072/A Tổ 2A, Phường Hội Nghĩa, Thị Xã Tân Uyên, Tỉnh Bình Dương<br>
+                📞 0915 288 922
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Long Hưng – Eakar</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 149 Nguyễn Tất Thành, Thị Trấn EaKar, Huyện Eakar, Tỉnh Đăk Lăk<br>
+                📞 0973 048 048
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Hiệp Hòa</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> QL37, Tổ Dân Phố Đức Thịnh, Thị Trấn Thắng, Huyện Hiệp Hòa, Tỉnh Bắc Giang<br>
+                📞 0945 111 655
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Đông Nam</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 588 Phạm Văn Thuận, Tam Hiệp, Thành Phố Biên Hòa, Tỉnh Đồng Nai<br>
+                📞 0909 638 958
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Phong Gia ITC – Đồng Nai</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> B14-B15 Lê Duẩn, Thị Trấn Long Thành, Huyện Long Thành, Tỉnh Đồng Nai<br>
+                📞 0912 994 922
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Tân Tiến Đạt</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số 35-37-39, Nguyễn Huệ, Phường 1, Thành Phố Cao Lãnh, Tỉnh Đồng Tháp<br>
+                📞 0869 266 669
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Hưng Đào</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số 78 Đường 25 Tháng 5, Thị Trấn Thanh Hà, Huyện Thanh Hà, Hải Dương<br>
+                📞 0346 931 028
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Việt Thanh – Lê Chân</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 12 Hồ Sen, Hàng Kênh, Quận Lê Chân, Thành Phố Hải Phòng<br>
+                📞 0974 235 959
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Duy Hùng</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Khu 6, Thị Trấn Thanh Ba, Huyện Thanh Ba, Tỉnh Phú Thọ<br>
+                📞 0968 963 472
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Phùng Tuyến</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Tổ 6 Thị Trấn Yên Thế, Huyện Lục Yên, Tỉnh Yên Bái<br>
+                📞 0915 058 133
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Hòa Bình</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số 1352 Tổ 2, Thị Trấn Yên Bình, Huyện Yên Bình, Tỉnh Yên Bái<br>
+                📞 0216 3852 630
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Thắng Lợi</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 1332B Hùng Vương, Thị Trấn Di Linh, Huyện Di Linh, Tỉnh Lâm Đồng<br>
+                📞 0903 662 113
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Bảo Tín</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 151 Phan Bội Châu, Phường 1, Thành Phố Bảo Lộc, Tỉnh Lâm Đồng<br>
+                📞 0983 864 162
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Bình Minh – 28 Trần Hưng Đạo</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số Nhà 28, Đại Lộ Trần Hưng Đạo, Phường Bắc Cường, Thành Phố Lào Cai, Tỉnh Lào Cai<br>
+                📞 0982 853 689
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Bình Minh – 456 Hoàng Liên</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 456 Hoàng Liên, Phường Kim Tân, Thành Phố Lào Cai, Tỉnh Lào Cai<br>
+                📞 0982 853 689
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Tín Kim</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Cúc Đông Phước, Xã Hoà An, Huyện Phú Hoà, Tỉnh Phú Yên<br>
+                📞 0915 890 329
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Minh Chính</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 135 Lý Thường Kiệt, Phường Sơn Phong, Thành Phố Hội An, Tỉnh Quảng Nam<br>
+                📞 0905 037 595
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Như Ý Mỹ</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Tổ Dân Phố Thạch By 1, Phường Phổ Thạch, Thị Xã Đức Phổ, Tỉnh Quảng Ngãi<br>
+                📞 0905 477 273
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Hòa Nhàn</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số Nhà 51 Khu 3 Thị Trấn Đông Triều, Phường Đông Triều, Thị Xã Đông Triều, Tỉnh Quảng Ninh<br>
+                📞 0979 272 700
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Thái Bảo</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Khu 8, Phường Hải Hoà, Thành Phố Móng Cái, Tỉnh Quảng Ninh<br>
+                📞 0976 818 586
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Thành Phát – 1052 Phú Riềng Đỏ</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 1052 Đường Phú Riềng Đỏ, Phường Tân Thiện, Thành Phố Đồng Xoài, Tỉnh Bình Phước<br>
+                📞 0271 3616 666
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Trung Thành</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số 320 Trần Hưng Đạo, Phường Đại Phúc, Thành Phố Bắc Ninh, Tỉnh Bắc Ninh<br>
+                📞 0973 191 056
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Hải Hà</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Thôn Thượng Giang, Thị Trấn Kiến Giang, Huyện Lệ Thủy, Tỉnh Quảng Bình<br>
+                📞 0915 390 618
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Lan Điệp</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Xã Phúc Trạch, Huyện Bố Trạch, Tỉnh Quảng Bình<br>
+                📞 0918 743 272
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Thảo Ái</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 72 Hai Bà Trưng, Vĩnh Ninh, Thành Phố Huế, Tỉnh Thừa Thiên Huế<br>
+                📞 0901 148 989
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Bình Minh</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số Nhà 904A Đường Lê Lợi, Phường Dĩnh Kế, Thành Phố Bắc Giang, Tỉnh Bắc Giang<br>
+                📞 0915 362 285
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Bông Cẩm</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Thôn 8, Thị Trấn Ea Súp, Huyện Ea Súp, Tỉnh Đắk Lắk<br>
+                📞 0868 388 075
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Long Hưng – Buôn Hồ</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 399 Hùng Vương, Phường An Lạc, Thị Xã Buôn Hồ, Tỉnh Đăk Lăk<br>
+                📞 0973 048 048
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Toàn Phát – Lý Thường Kiệt</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 206 Lý Thường Kiệt, Thắng Lợi, Thành Phố Buôn Ma Thuột, Tỉnh Đắk Lắk<br>
+                📞 0902 898 707
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop TKH</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 147 Đỗ Xuân Hợp, Phước Long B, Quận 9, Thành Phố Hồ Chí Minh<br>
+                📞 0283 5354 828
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Xe Điện Move</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> C3/3 Phạm Hùng, Bình Hưng, Huyện Bình Chánh, Thành Phố Hồ Chí Minh<br>
+                📞 0818 002 992
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Quang Nga</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Khối 3, Thị Trấn Quán Hành, Huyện Nghi Lộc, Tỉnh Nghệ An<br>
+                📞 0976 444 560
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Trọng Loan</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Tiểu Khu 10, Thị Trấn Mộc Châu, Huyện Mộc Châu, Tỉnh Sơn La<br>
+                📞 0919 358 999
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Đức Hòa – 99 Bắc Sơn</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 99 Đường Bắc Sơn, Phường Hoàng Văn Thụ, Thành Phố Thái Nguyên, Thái Nguyên<br>
+                📞 0912 663 499
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Phát Gia</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số 76, Phố Lý Bôn, Cẩm Đông, Thành Phố Cẩm Phả, Tỉnh Quảng Ninh<br>
+                📞 0912 083 785
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Trường Phượng</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Tổ 8, Thị Trấn Đồng Tâm, Huyện Chợ Mới, Tỉnh Bắc Kạn<br>
+                📞 0972 208 797
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Tấn Tiến Phát</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Tổ Dân Phố 1, Thị Trấn Kiến Đức, Huyện Đăk R'Lấp, Tỉnh Đắk Nông<br>
+                📞 0961 487 979
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Kiên Nga</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 704 Quang Trung, Tổ Dân Phố 6, Thị Trấn Chư Ty, Huyện Đức Cơ, Tỉnh Gia Lai<br>
+                📞 0984 790 843
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Quỳnh Lâm</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 112-114 Trần Hưng Đạo, Phường Đoàn Kết, Thị Xã Ayun Pa, Tỉnh Gia Lai<br>
+                📞 0913 446 639
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop TP Biker</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 1034 Quang Trung, Thị Xã An Khê, Tỉnh Gia Lai<br>
+                📞 0964 226 777
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Hải Toàn</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số 33 Đường Hà Tôn Mục, Phường Nam Hà, Thành Phố Hà Tĩnh, Tỉnh Hà Tĩnh<br>
+                📞 0853 131 499
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Mạnh Phong</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số 386 Trần Hưng Đạo, Phường An Lưu, Thị Xã Kinh Môn, Tỉnh Hải Dương<br>
+                📞 0975 810 113
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Ân Hiển 2</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 91 Nguyễn Lương Bằng, Thị Trấn Thanh Miện, Huyện Thanh Miện, Hải Dương<br>
+                📞 0986 414 212
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Ân Hiển – Phủ</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> DT 392, Mỹ Trạch, Xã Bình Minh, Huyện Bình Giang, Hải Dương<br>
+                📞 0986 414 212
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Xe Điện Hà Thành</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 880 QL1A, Phường Bình Trị Đông A, Quận Bình Tân, Thành Phố Hồ Chí Minh<br>
+                📞 0286 2873 666
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Quang Phương – 390 Nguyễn Trãi</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 390 Nguyễn Trãi, Phường 8, Quận 5, Thành Phố Hồ Chí Minh<br>
+                📞 0795 681 907
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Xe Điện Xanh Sài Gòn – 150 Nguyễn Oanh</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 150 Nguyễn Oanh, Phường 7, Quận Gò Vấp, Thành Phố Hồ Chí Minh<br>
+                📞 0962 221 555
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Hóc Môn – Chi Nhánh Lý Thường Kiệt</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 53/D1, Lý Thường Kiệt, Thị Trấn Hóc Môn, Huyện Hóc Môn, TP Hồ Chí Minh<br>
+                📞 0984 300 233
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Quang Phương – 458 Nguyễn Trí Thanh</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 458 Nguyễn Trí Thanh, Phường 6, Quận 10, Hồ Chí Minh<br>
+                📞 0903 331 601
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Hải Nhường</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 110 Phố Lao Động, Thị Trấn Lộc Bình, Huyện Lộc Bình, Tỉnh Lạng Sơn<br>
+                📞 0971 797 556
+ Smoking>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Huy Bộ</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Ngã Tư Mới Xã Sơn Hà, Huyện Hữu Lũng, Tỉnh Lạng Sơn<br>
+                📞 0973 899 968
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Đình Đông</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Khu Tây Hồ 1, Phường Quang Tiến, Thị Xã Thái Hòa, Tỉnh Nghệ An<br>
+                📞 0917 040 929
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Ngân Hà – 39A Lê Hồng Phong</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 39A, Đường Lê Hồng Phong, Phường Hưng Bình, Thành Phố Vinh, Nghệ An<br>
+                📞 0912 044 268
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Sơn Quy</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Khối 4, Thị Trấn Yên Thành, Huyện Yên Thành, Tỉnh Nghệ An<br>
+                📞 0968 457 098
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Tiến Nam</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Khu Đô Thị Central Park, Thị Trấn Đô Lương, Nghệ An<br>
+                📞 0982 154 001
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Quang Dũng</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Khối 6, Thị Trấn Con Cuông, Huyện Con Cuông, Tỉnh Nghệ An<br>
+                📞 0912 079 397
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Hà Anh</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Đường Ninh Tốn, Xã Đông Sơn, Thành Phố Tam Điệp, Ninh Bình<br>
+                📞 0912 563 812
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Liên Đá – TP Ninh Bình</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số 328-330-332-334 Đường 30/6, Phố Phúc Trì, P Nam Thành, TP Ninh Bình, Ninh Bình<br>
+                📞 0229 7309 868
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Hùng Hồng Ba Đồn</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 397 Quảng Trung, Phường Ba Đồn, Thị Xã Ba Đồn, Quảng Bình<br>
+                📞 0915 203 773
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Dũng Lập</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số Nhà 206, Đường Tân Long - Tân An, TT Yên Lập, Huyện Yên Lập, Phú Thọ<br>
+                📞 0975 129 888
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Phong Lý</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số Nhà 414, Đường Nguyễn Huệ, Khu Phố 1, P. Phú Sơn, TX Bỉm Sơn, Thanh Hóa<br>
+                📞 0977 552 245
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Thanh Hoa</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số 324A Đường Nguyễn Trãi, Phường Phú Sơn, TP Thanh Hóa, Tỉnh Thanh Hóa<br>
+                📞 0979 992 498
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Hồng Sơn Star</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 131 Nguyễn Lương Bằng, Phường Hòa Khánh Bắc, Quận Liên Chiểu, TP Đà Nẵng<br>
+                📞 0911 002 006
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Hà Ninh</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 294 Trần Nhân Tông, Uông Bí, Quảng Ninh<br>
+                📞 0972 086 899
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Triệu Đô</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Ấp Thượng 2, Thị Trấn Phú Mỹ, Huyện Phú Tân, Tỉnh An Giang<br>
+                📞 0823 450 022
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Trung Ngân</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số 2, Đường Võ Nguyên Giáp, Tổ 1, Phường Sông Cầu, Thành Phố Bắc Kạn, Tỉnh Bắc Kạn<br>
+                📞 0372 129 456
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Cường Thịnh</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 202 Đường 3/2, TT Ngô Mây, Huyện Phù Cát, Tỉnh Bình Định<br>
+                📞 0903 503 279
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Kim Thanh</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Đường 22 Tháng 12, Phường Thuận Giao, TP Thuận An, Tỉnh Bình Dương<br>
+                📞 0329 555 666
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Thanh Vương Phát</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số 359, Đường ĐT 741, Khu Phố Phú Nghị, Phường Hòa Lợi, Thị Xã Bến Cát, Tỉnh Bình Dương<br>
+                📞 0332 161 161
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Nam Bình – Trần Văn Thời</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Khóm 9, TT Trần Văn Thời, Huyện Trần Văn Thời, Tỉnh Cà Mau<br>
+                📞 0918 212 821
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Ngân Thượng</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Tổ Dân Phố Hòa Nam, Thị Trấn Quảng Uyên, Huyện Quảng Hòa, Tỉnh Cao Bằng<br>
+                📞 0979 642 602
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Minh Hòa</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số 231, Tổ 1, Phường Sông Bằng, Thành Phố Cao Bằng, Tỉnh Cao Bằng<br>
+                📞 0943 279 666
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Việt Ngọc Phương – Lê Đại Hành</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 133-135 Lê Đại Hành, Phường Khuê Trung, Quận Cẩm Lệ, Thành Phố Đà Nẵng<br>
+                📞 0905 676 679
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Thanh Tín</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 675 Nguyễn Tất Thành, Phường Xuân Hà, Quận Thanh Khê, Thành Phố Đà Nẵng<br>
+                📞 0902 756 545
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Tân Hưng Yên</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 130 Phan Châu Trinh, Phường Phước Ninh, Quận Hải Châu, Thành Phố Đà Nẵng<br>
+                📞 0941 003 456
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Thảo Linh</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Đường Tỉnh Lộ 6, Xã Cư Suê, Huyện Cư M'gar, Tỉnh Đắk Lắk<br>
+                📞 0934 717 171
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Minh Hoàng Huy</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 108 Đường Hùng Vương, Khu Phố 8, Thị Trấn Gia Ray, Huyện Xuân Lộc, Tỉnh Đồng Nai<br>
+                📞 0779 999 939
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop XeDap.vn</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 19, 20, 21 Đồng Khởi, Khu Phố 3, Phường Tam Hòa, TP Biên Hòa, Tỉnh Đồng Nai<br>
+                📞 0968 445 155
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Sâm Huấn</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Cụm 8, Thị Trấn Phúc Thọ, Huyện Phúc Thọ, Thành Phố Hà Nội<br>
+                📞 0368 308 768
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Việt Thanh – 78 Ô Chợ Dừa</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 78 Ô Chợ Dừa, Quận Đống Đa, Thành Phố Hà Nội<br>
+                📞 0904 998 899
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Tú An Phát</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số 74, Khối 13, Xã Phù Lỗ, Huyện Sóc Sơn, Thành Phố Hà Nội<br>
+                📞 0912 906 337
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Việt Thanh – 148 Cầu Bươu</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 148 Cầu Bươu, Thôn Yên Xá, Xã Tân Triều, Huyện Thanh Trì, Hà Nội<br>
+                📞 0974 952 288
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Việt Đức</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 269 Điện Biên Phủ, Phường Binh Hàn, Thành Phố Hải Dương, Hải Dương<br>
+                📞 0903 276 559
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Mai Hưng</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số 92, Khu Phố 3/2, TT Vĩnh Bảo, Huyện Vĩnh Bảo, Hải Phòng<br>
+                📞 0969 269 799
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Thanh Tùng – 723 Trường Chinh</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 723 Trường Chinh, Phường Lãm Hà, Quận Kiến An, TP Hải Phòng<br>
+                📞 0764 919 919
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Thanh Tùng – An Dương</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Số 5, Máng Nước/ Thôn Cái Tắt, An Đông, An Dương, TP Hải Phòng<br>
+                📞 0764 919 919
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Martin 107</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 107 Võ Thị Sáu, Phường 6, Quận 3, Hồ Chí Minh<br>
+                📞 0283 820 0172
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Xe Điện Xanh Sài Gòn – 222 Lê Văn Khương</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 222 Lê Văn Khương, Thới An, Quận 12, Hồ Chí Minh<br>
+                📞 0962 221 555
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Quang Phương – 349A Lê Đại Hành</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 349A Lê Đại Hành, Phường 13, Quận 11, Hồ Chí Minh<br>
+                📞 0903 331 601
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Sài Gòn Emoto – Bình Tân</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 839 Tân Kỳ Tân Quý, Khu Phố 3, Phường Bình Hưng Hòa A, Quận Bình Tân, Hồ Chí Minh<br>
+                📞 0931 330 218
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Việt Thanh – 308 Huỳnh Tấn Phát</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 308 (216F) Huỳnh Tấn Phát, Tân Thuận Tây, Quận 7, Hồ Chí Minh<br>
+                📞 0902 572 288
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Đồng Thắng – 658 Âu Cơ</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> 658 Âu Cơ, Phường 10, Quận Tân Bình, Hồ Chí Minh<br>
+                📞 0978 222 168
+            </div>
+        </li>
+        <li class="shop">
+            <div class="shop-title"><img src="image/logoyadea.png">Yadea Shop Kỳ Anh – Phú Lộc</div>
+            <div class="shop-info">
+                <img src="image/location.png" alt="Địa Chỉ" width="20px"> Thôn Vinh Sơn, Xã Lộc Sơn, Huyện Phú Lộc, Tỉnh
+            </div>
+        </li>
+        </ul>
+        </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+    <div class="LienHe">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-3">
+                    <div class="LienHeCongTy">
+                        <img src="image/logo-yadea.svg" alt="Logo Công Ty" style="max-width: 150px;">
+                        <p><strong>CÔNG TY TNHH ELECTRIC MOTORCYCLE YADEA VIỆT NAM</strong></p>
+                        <p>Mã Số Thuế: 2400866767 do Sở KHĐT Tỉnh Bắc Giang cấp lần đầu ngày 27/06/2019.</p>
+                        <p><strong>Địa Chỉ:</strong> Lô O1-2... Quang Châu, Việt Yên, Bắc Giang, Việt Nam.</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer-list">
+                        <p><strong>Sản phẩm mới</strong></p>
+                        <li><a href="#">YADEA Ossy</a></li>
+                        <li><a href="#">YADEA Voltguard</a></li>
+                        <li><a href="#">YADEA Oris</a></li>
+                        <li><a href="#">YADEA Orla 2024</a></li>
+                        <li><a href="#">YADEA iFUN</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer-list">
+                        <p><strong>Về Chúng Tôi</strong></p>
+                        <li><a href="#">Về YADEA</a></li>
+                        <li><a href="#">Cửa Hàng</a></li>
+                        <li><a href="#">Công Nghệ</a></li>
+                        <li><a href="#">Tin Tức</a></li>
+                        <li><a href="#">Tuyển Dụng</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer-list">
+                        <p><strong>Hỗ Trợ</strong></p>
+                        <li><a href="#">Hỗ Trợ & Bảo Hành</a></li>
+                        <li><a href="#">Thanh Toán</a></li>
+                        <li><a href="#">Vận Chuyển</a></li>
+                        <li><a href="#">Chính Sách Đổi Trả</a></li>
+                        <li><a href="#">Chính Sách Bảo Mật</a></li>
+                        <li><a href="#">Cơ Hội Hợp Tác</a></li>
+                        <li><a href="#">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <p><strong>Theo Dõi YADEA</strong></p>
+                    <div class="social-media">
+                        <img src="image/facebook.jpg" alt="Facebook">
+                        <img src="image/tiktok.png" alt="TikTok">
+                        <img src="image/tải xuống.jpg" alt="Instagram">
+                        <img src="image/youtube.png" alt="YouTube">
+                        <img src="image/zalo.png" alt="Zalo">
+                    </div>
+                    <div class="contact-info">
+                        <p><strong>CSKH:</strong> 1900636803</p>
+                        <p><strong>Liên Hệ Hợp Tác:</strong> (+84) 204 6299 288</p>
+                        <p><strong>Email:</strong> market@yadea.com.vn</p>
+                    </div>
+                    <img src="image/logoSaleNoti-300x114.png" alt="Chứng nhận" style="max-width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script>
+    function toggleMenu() {
+        const menu = document.getElementById('mainMenu');
+        menu.classList.toggle('active');
+    }
+    </script>
+    <script>
+  const hoverLink = document.getElementById("hoverXemay");
+  const spBox = document.getElementById("Tatcasanpham");
+
+  hoverLink.addEventListener("mouseenter", () => {
+    spBox.style.display = "flex";
+  });
+
+  hoverLink.addEventListener("mouseleave", () => {
+    setTimeout(() => {
+      if (!spBox.matches(':hover')) {
+        spBox.style.display = "none";
+      }
+    }, 200);
+  });
+
+  spBox.addEventListener("mouseleave", () => {
+    spBox.style.display = "none";
+  });
+
+  spBox.addEventListener("mouseenter", () => {
+    spBox.style.display = "flex";
+  });
+</script>
+<script>
+  // Xử lý click vào danh mục sản phẩm
+  document.querySelectorAll('.sidebar ul li').forEach(item => {
+    item.addEventListener('click', function() {
+      // Lấy giá trị data-category từ item
+      const selected = this.getAttribute('data-category');
+
+      // Ẩn tất cả danh mục
+      document.querySelectorAll('.product-category').forEach(category => {
+        category.style.display = 'none';
+      });
+
+      // Hiện danh mục được chọn
+      const target = document.querySelector(`.product-category[data-category="${selected}"]`);
+      if (target) {
+        target.style.display = 'flex';
+        target.style.flexWrap = 'wrap';
+        target.style.gap = '20px';
+      }
+
+      // Highlight item đang chọn
+      document.querySelectorAll('.sidebar ul li').forEach(li => li.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+</script>
+<script>
+  const hoverXedap = document.getElementById("hoverXedap");
+
+  hoverXedap.addEventListener("mouseenter", () => {
+    spBox.style.display = "flex";
+
+    // Chỉ hiện danh mục xe đạp điện
+    document.querySelectorAll('.product-category').forEach(category => {
+      category.style.display = 'none';
+    });
+    const xedap = document.querySelector('.product-category[data-category="xedap"]');
+    if (xedap) {
+      xedap.style.display = 'flex';
+      xedap.style.flexWrap = 'wrap';
+      xedap.style.gap = '20px';
+    }
+
+    // Cập nhật sidebar active nếu có
+    document.querySelectorAll('.sidebar ul li').forEach(li => li.classList.remove('active'));
+    const activeLi = document.querySelector('.sidebar ul li[data-category="xedap"]');
+    if (activeLi) activeLi.classList.add('active');
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# Chuyển URL đẹp /thongtinsanpham/slug -> /thongtinsanpham/index.php?slug=slug
+RewriteRule ^thongtinsanpham/([^/]+)/?$ thongtinsanpham/index.php?slug=$1 [L,QSA]
+
+# Rewrite các file .html / .php nếu tồn tại
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+)$ $1.html [L]
+
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^/]+)$ $1.php [L]

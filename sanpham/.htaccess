@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# QUAN TRỌNG: nếu web bạn không đặt trong /Yadea/ mà là thư mục gốc hoặc tên khác,
+# sửa lại RewriteBase cho đúng đường dẫn thật trên server, ví dụ:
+#   http://localhost/Yadea/thongtinsanpham/...  -> RewriteBase /Yadea/thongtinsanpham/
+#   http://localhost/thongtinsanpham/...        -> RewriteBase /thongtinsanpham/
+RewriteBase /Yadea/sanpham/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-zA-Z0-9\-]+)/?$ index.php?slug=$1 [QSA,L]
